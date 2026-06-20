@@ -1,0 +1,265 @@
+<div class="country-page">
+  <div class="country-container">
+
+    <!-- FORM -->
+    <div class="form-card">
+      <div class="form-header">
+        <h2>{{ isEditMode ? 'Edit User' : 'Create User' }}</h2>
+      </div>
+
+      <form [formGroup]="userForm" (ngSubmit)="onSubmit()" class="country-form">
+
+        <div class="form-grid">
+
+          <!-- NAME -->
+          <div class="form-group">
+            <label>Name</label>
+            <input formControlName="name" placeholder="Enter name" (keypress)="allowOnlyLetters($event)"/>
+          </div>
+
+          <!-- EMAIL -->
+          <div class="form-group">
+            <label>Email</label>
+            <input formControlName="email" placeholder="Enter email" />
+          </div>
+
+          <!-- PHONE -->
+          <div class="form-group">
+            <label>Phone</label>
+            <input formControlName="phoneNumber" placeholder="Enter phone"  (keypress)="allowOnlyNumbers($event)" />
+          </div>
+
+          <!-- PASSWORD -->
+          <!-- <div class="form-group">
+            <label>Password</label>
+            <input type="password" formControlName="password" placeholder="Enter password" />
+          </div> -->
+
+          <!-- ORGANIZATION -->
+          <div class="form-group">
+            <label>Organization</label>
+            <div class="custom-select-wrapper">
+              <div class="custom-select-box" [class.placeholder]="!selectedOrgName" (click)="toggleOrgDropdown($event)">
+                {{ selectedOrgName || 'Select Organization' }}
+                <span class="arrow">▾</span>
+              </div>
+              <div class="custom-dropdown" *ngIf="isOrgDropdownOpen">
+                <div *ngIf="organizations.length === 0" class="dropdown-item no-records">
+                  No records found
+                </div>
+                <div class="dropdown-item" *ngFor="let o of organizations" (click)="selectOrganization(o,$event)">
+                  {{ o.organizationName }}
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- BRANCH -->
+          <div class="form-group">
+            <label>Branch</label>
+            <div class="custom-select-wrapper">
+              <div class="custom-select-box" [class.placeholder]="!selectedBranchName" (click)="toggleBranchDropdown()">
+                {{ selectedBranchName || 'Select Branch' }}
+                <span class="arrow">▾</span>
+              </div>
+              <div class="custom-dropdown" *ngIf="isBranchDropdownOpen">
+                <div *ngIf="branches.length === 0" class="dropdown-item no-records">
+                  No records found
+                </div>
+                <div class="dropdown-item" *ngFor="let b of branches" (click)="selectBranch(b)">
+                  {{ b.branchName }}
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- USER TYPE -->
+          <div class="form-group">
+            <label>User Type</label>
+            <div class="custom-select-wrapper">
+              <div class="custom-select-box" [class.placeholder]="!selectedUserTypeName"
+                (click)="toggleUserTypeDropdown()">
+                {{ selectedUserTypeName || 'Select User Type' }}
+                <span class="arrow">▾</span>
+              </div>
+              <div class="custom-dropdown" *ngIf="isUserTypeDropdownOpen">
+                <div *ngIf="userTypes.length === 0" class="dropdown-item no-records">
+                  No records found
+                </div>
+                <div class="dropdown-item" *ngFor="let u of userTypes" (click)="selectUserType(u)">
+                  {{ u.typeName }}
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- ROLE -->
+          <!-- <div class="form-group">
+            <label>Role</label>
+            <div class="multi-select-wrapper">
+              <div class="multi-select-box" (click)="toggleRoleDropdown($event)">
+                <div class="chips">
+                  <span class="chip" *ngFor="let r of selectedRoles">
+                    {{ r.roleName }}
+                    <span (click)="removeRole(r, $event)">✕</span>
+                  </span>
+                  <span *ngIf="selectedRoles.length === 0" class="placeholder">
+                    Select Roles
+                  </span>
+                </div>
+                <span class="arrow">▾</span>
+              </div>
+              <div class="multi-dropdown" *ngIf="isRoleDropdownOpen">
+                <input type="text"
+                       class="search-box"
+                       placeholder="Search role..."
+                       [(ngModel)]="roleSearch"
+                       [ngModelOptions]="{standalone: true}" />
+                <div class="dropdown-list">
+                  <div class="dropdown-item"
+                       *ngFor="let r of filteredRoles()"
+                       (click)="toggleRoleSelection(r, $event)">
+                    <input type="checkbox" [checked]="isRoleSelected(r)" />
+                    {{ r.roleName }}
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div> -->
+
+          <!-- ROLE -->
+          <div class="form-group">
+            <label>Role</label>
+
+            <div class="custom-select-wrapper">
+
+              <div class="custom-select-box" [class.placeholder]="!selectedRoleName"
+                (click)="toggleRoleDropdown($event)">
+
+                {{ selectedRoleName || 'Select Role' }}
+
+                <span class="arrow">▾</span>
+              </div>
+
+
+              <div class="custom-dropdown" *ngIf="isRoleDropdownOpen">
+
+
+                <div *ngIf="roles.length === 0" class="dropdown-item no-records">
+
+                  No records found
+
+                </div>
+
+
+                <div class="dropdown-item" *ngFor="let r of roles" (click)="selectRole(r,$event)">
+
+                  {{ r.roleName }}
+
+                </div>
+
+
+              </div>
+
+            </div>
+
+          </div>
+
+          <!-- PERMISSION -->
+          <!-- <div class="form-group">
+            <label>Permission</label>
+            <div class="multi-select-wrapper">
+              <div class="multi-select-box" (click)="togglePermissionDropdown($event)">
+                <div class="chips">
+                  <span class="chip" *ngFor="let p of selectedPermissions">
+                    {{ p.permissionName }}
+                    <span (click)="removePermission(p, $event)">✕</span>
+                  </span>
+                  <span *ngIf="selectedPermissions.length === 0" class="placeholder">
+                    Select Permissions
+                  </span>
+                </div>
+                <span class="arrow">▾</span>
+              </div>
+              <div class="multi-dropdown" *ngIf="isPermissionDropdownOpen">
+                <input type="text"
+                       class="search-box"
+                       placeholder="Search permission..."
+                       [(ngModel)]="permissionSearch"
+                       [ngModelOptions]="{standalone: true}" />
+                <div class="dropdown-list">
+                  <div class="dropdown-item"
+                       *ngFor="let p of filteredPermissions()"
+                       (click)="togglePermissionSelection(p, $event)">
+                    <input type="checkbox" [checked]="isPermissionSelected(p)" />
+                    {{ p.permissionName }}
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div> -->
+
+        </div>
+
+        <!-- BUTTONS -->
+        <div class="form-actions">
+          <button type="submit" class="save-btn">
+            {{ isEditMode ? 'Update User' : 'Save User' }}
+          </button>
+          <button type="button" class="cancel-btn" (click)="resetForm()">
+            Reset
+          </button>
+        </div>
+
+      </form>
+    </div>
+
+    <!-- TABLE -->
+    <div class="table-card">
+      <div class="table-header">
+        <h2>User List</h2>
+        <div class="search-box">
+          <input [(ngModel)]="searchText" [ngModelOptions]="{standalone: true}" (input)="applySearch()"
+            placeholder="Search users..." />
+        </div>
+      </div>
+      <div class="table-wrapper">
+        <table>
+          <thead>
+            <tr>
+              <th>ID</th>
+              <th>Name</th>
+              <th>Email</th>
+              <th>Phone</th>
+              <th>Org</th>
+              <th>Branch</th>
+              <th>Type</th>
+              <th>Role</th>
+              <th>Actions</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr *ngFor="let u of filteredUsers">
+              <td>{{ u.userId }}</td>
+              <td>{{ u.name }}</td>
+              <td>{{ u.email }}</td>
+              <td>{{ u.phoneNumber }}</td>
+              <td>{{ getOrgName(u.organizationId) }}</td>
+              <td>{{ getBranchName(u.branchId) }}</td>
+              <td>{{ getUserTypeName(u.userTypeId) }}</td>
+              <td>{{ getRoleName(u.roleId) }}</td>
+              <td class="action-buttons">
+                <button class="edit-btn" (click)="editUser(u)">Edit</button>
+                <button class="delete-btn" (click)="deleteUser(u.userId)">Delete</button>
+              </td>
+            </tr>
+            <tr *ngIf="filteredUsers.length === 0">
+              <td colspan="8" class="no-data">No users found</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+
+  </div>
+</div>

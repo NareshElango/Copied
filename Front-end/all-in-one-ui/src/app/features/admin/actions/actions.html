@@ -1,0 +1,91 @@
+<div class="tenant-page">
+  <div class="tenant-container">
+
+    <!-- FORM CARD -->
+    <div class="form-card">
+      <div class="form-header">
+        <h2>{{ isEditMode ? 'Edit Action' : 'Create Action' }}</h2>
+      </div>
+
+      <form [formGroup]="actionForm" (ngSubmit)="onSubmit()" class="tenant-form">
+
+        <div class="form-grid">
+
+          <!-- ACTION TITLE -->
+          <div class="form-group full-width">
+            <label>Action Title</label>
+            <input type="text" formControlName="actionTitle" placeholder="Enter action title" (keypress)="allowOnlyLetters($event)"/>
+            <!-- <small *ngIf="hasError('actionTitle')" class="error">
+              Action Title is required
+            </small> -->
+          </div>
+
+          <!-- DESCRIPTION -->
+          <div class="form-group full-width">
+            <label>Action Description</label>
+            <textarea formControlName="actionDescription" placeholder="Enter action description" (keypress)="allowOnlyLetters($event)"></textarea>
+            <!-- <small *ngIf="hasError('actionDescription')" class="error">
+              Action Description is required
+            </small> -->
+          </div>
+
+        </div>
+
+        <!-- BUTTONS -->
+        <div class="form-actions">
+          <button type="submit" class="save-btn">
+            {{ isEditMode ? 'Update Action' : 'Save Action' }}
+          </button>
+
+          <button type="button" class="cancel-btn" (click)="resetForm()">
+            Reset
+          </button>
+        </div>
+
+      </form>
+    </div>
+
+    <!-- TABLE CARD -->
+    <div class="table-card">
+      <div class="table-header">
+        <h2>Action List</h2>
+
+        <div class="search-box">
+          <input type="text" [(ngModel)]="searchText" (input)="applySearch()" placeholder="Search actions..." />
+        </div>
+      </div>
+
+      <div class="table-wrapper">
+        <table>
+          <thead>
+            <tr>
+              <th>ID</th>
+              <th>Title</th>
+              <th>Description</th>
+              <th>Actions</th>
+            </tr>
+          </thead>
+
+          <tbody>
+            <tr *ngFor="let a of filteredActions">
+              <td>{{ a.actionId }}</td>
+              <td>{{ a.actionTitle }}</td>
+              <td>{{ a.actionDescription }}</td>
+
+              <td class="action-buttons">
+                <button class="edit-btn" (click)="editAction(a)">Edit</button>
+                <button class="delete-btn" (click)="deleteAction(a.actionId)">Delete</button>
+              </td>
+            </tr>
+
+            <tr *ngIf="filteredActions.length === 0">
+              <td colspan="4" class="no-data">No data found</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+
+    </div>
+
+  </div>
+</div>

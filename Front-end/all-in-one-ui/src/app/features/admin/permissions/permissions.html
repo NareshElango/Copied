@@ -1,0 +1,93 @@
+<div class="country-page">
+  <div class="country-container">
+
+    <!-- FORM -->
+    <div class="form-card">
+      <div class="form-header">
+        <h2>{{ isEditMode ? 'Edit Permission' : 'Create Permission' }}</h2>
+      </div>
+
+      <form [formGroup]="permissionForm" (ngSubmit)="onSubmit()" class="country-form">
+
+        <div class="form-grid">
+
+          <div class="form-group">
+            <label>Permission Name</label>
+
+            <input
+              type="text"
+              formControlName="permissionName"
+              placeholder="Enter permission name"
+            />
+
+            <small *ngIf="hasError('permissionName')" class="error">
+              Permission Name is required
+            </small>
+          </div>
+
+        </div>
+
+        <div class="form-actions">
+          <button type="submit" class="save-btn">
+            {{ isEditMode ? 'Update Permission' : 'Save Permission' }}
+          </button>
+
+          <button type="button" class="cancel-btn" (click)="resetForm()">
+            Reset
+          </button>
+        </div>
+
+      </form>
+    </div>
+
+    <!-- TABLE -->
+    <div class="table-card">
+
+      <div class="table-header">
+        <h2>Permission List</h2>
+
+        <div class="search-box">
+          <input
+            [(ngModel)]="searchText"
+            (input)="applySearch()"
+            placeholder="Search permissions..."
+          />
+        </div>
+      </div>
+
+      <div class="table-wrapper">
+
+        <table>
+          <thead>
+            <tr>
+              <th>ID</th>
+              <th>Permission Name</th>
+              <th>Actions</th>
+            </tr>
+          </thead>
+
+          <tbody>
+
+            <tr *ngFor="let p of filteredPermissions">
+              <td>{{ p.permissionId }}</td>
+              <td>{{ p.permissionName }}</td>
+
+              <td class="action-buttons">
+                <button class="edit-btn" (click)="editPermission(p)">Edit</button>
+                <button class="delete-btn" (click)="deletePermission(p.permissionId)">Delete</button>
+              </td>
+            </tr>
+
+            <tr *ngIf="filteredPermissions.length === 0">
+              <td colspan="3" class="no-data">No permissions found</td>
+            </tr>
+
+          </tbody>
+        </table>
+
+      </div>
+
+    </div>
+
+  </div>
+</div>

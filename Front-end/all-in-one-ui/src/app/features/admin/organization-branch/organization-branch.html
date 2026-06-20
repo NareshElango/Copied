@@ -1,0 +1,141 @@
+<div class="country-page">
+  <div class="country-container">
+
+    <!-- FORM -->
+    <div class="form-card">
+      <div class="form-header">
+        <h2>{{ isEditMode ? 'Edit Branch' : 'Create Branch' }}</h2>
+      </div>
+
+      <form [formGroup]="branchForm" (ngSubmit)="onSubmit()" class="country-form">
+
+        <div class="form-grid">
+
+          <!-- BRANCH NAME -->
+          <div class="form-group">
+            <label>Branch Name</label>
+            <input formControlName="branchName" placeholder="Enter branch name" (keypress)="allowOnlyLetters($event)"/>
+          </div>
+
+          <!-- ORGANIZATION -->
+          <div class="form-group">
+            <label>Organization</label>
+
+            <div class="custom-select-wrapper">
+              <div class="custom-select-box" [class.placeholder]="!selectedOrgName" (click)="toggleOrgDropdown()">
+                {{ selectedOrgName || 'Select Organization' }}
+                <span class="arrow">▾</span>
+              </div>
+
+              <div class="custom-dropdown" *ngIf="isOrgDropdownOpen">
+                <div *ngIf="organizations.length === 0" class="dropdown-item disabled">
+                  No records found
+                </div>
+                <div class="dropdown-item" *ngFor="let o of organizations" (click)="selectOrganization(o)">
+                  {{ o.organizationName }}
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- DIVISION -->
+          <div class="form-group">
+            <label>Division</label>
+
+            <div class="custom-select-wrapper">
+              <div class="custom-select-box" [class.placeholder]="!selectedDivisionName"
+                (click)="toggleDivisionDropdown()">
+                {{ selectedDivisionName || 'Select Division' }}
+                <span class="arrow">▾</span>
+              </div>
+
+              <div class="custom-dropdown" *ngIf="isDivisionDropdownOpen">
+                <div *ngIf="divisions.length === 0" class="dropdown-item disabled">
+                  No records found
+                </div>
+                <div class="dropdown-item" *ngFor="let d of divisions" (click)="selectDivision(d)">
+                  {{ d.divisionName }}
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- ADDRESS -->
+          <div class="form-group">
+            <label>Address</label>
+            <input formControlName="address" placeholder="Enter address" />
+          </div>
+
+          <!-- PHONE -->
+          <div class="form-group">
+            <label>Phone</label>
+            <input formControlName="phone" placeholder="Enter phone" (keypress)="allowOnlyNumbers($event)" />
+          </div>
+
+        </div>
+
+        <!-- BUTTONS -->
+        <div class="form-actions">
+          <button type="submit" class="save-btn">
+            {{ isEditMode ? 'Update Branch' : 'Save Branch' }}
+          </button>
+
+          <button type="button" class="cancel-btn" (click)="resetForm()">
+            Reset
+          </button>
+        </div>
+
+      </form>
+    </div>
+
+    <!-- TABLE -->
+    <div class="table-card">
+      <div class="table-header">
+        <h2>Branch List</h2>
+
+        <div class="search-box">
+          <input [(ngModel)]="searchText" (input)="applySearch()" placeholder="Search branch..." />
+        </div>
+      </div>
+
+      <div class="table-wrapper">
+        <table>
+
+          <thead>
+            <tr>
+              <th>ID</th>
+              <th>Branch</th>
+              <th>Organization</th>
+              <th>Division</th>
+              <th>Address</th>
+              <th>Phone</th>
+              <th>Actions</th>
+            </tr>
+          </thead>
+
+          <tbody>
+            <tr *ngFor="let b of filteredBranches">
+              <td>{{ b.branchId }}</td>
+              <td>{{ b.branchName }}</td>
+              <td>{{ b.organizationName }}</td>
+              <td>{{ b.divisionName }}</td>
+              <td>{{ b.address }}</td>
+              <td>{{ b.phone }}</td>
+
+              <td class="action-buttons">
+                <button class="edit-btn" (click)="editBranch(b)">Edit</button>
+                <button class="delete-btn" (click)="deleteBranch(b.branchId)">Delete</button>
+              </td>
+            </tr>
+
+            <tr *ngIf="filteredBranches.length === 0">
+              <td colspan="7" class="no-data">No branches found</td>
+            </tr>
+          </tbody>
+
+        </table>
+      </div>
+    </div>
+
+  </div>
+</div>

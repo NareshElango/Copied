@@ -1,0 +1,915 @@
+/* ===== RESET ===== */
+* {
+  box-sizing: border-box;
+}
+
+:host {
+  display: block;
+  width: 100%;
+  min-height: 100%;
+}
+
+/* ===== PAGE WRAPPER ===== */
+.country-page {
+  width: 100%;
+  min-height: 100%;
+}
+
+.country-container {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  width: 100%;
+}
+
+/* ===== CARD STYLE ===== */
+.form-card,
+.table-card {
+  width: 100%;
+  background: rgba(255, 255, 255, 0.82);
+  backdrop-filter: blur(16px);
+  border: 1px solid rgba(226, 232, 240, 0.85);
+  border-radius: 28px;
+  box-shadow: 0 12px 35px rgba(15, 23, 42, 0.05);
+  overflow: hidden;
+}
+
+/* ===== HEADERS ===== */
+.form-header,
+.table-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 24px 28px 18px;
+  border-bottom: 1px solid rgba(226, 232, 240, 0.8);
+}
+
+.form-header h2,
+.table-header h2 {
+  margin: 0;
+  font-size: 1.35rem;
+  font-weight: 700;
+  color: #0f172a;
+}
+
+/* ===== FORM ===== */
+.country-form {
+  padding: 28px;
+}
+
+.form-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 22px;
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  grid-column: 1 / -1;
+}
+
+
+/* FULL WIDTH FIELD (spans full row) */
+.form-group.full-width {
+  grid-column: 1 / -1;
+}
+
+.form-group label {
+  font-size: 0.95rem;
+  font-weight: 600;
+  color: #334155;
+}
+
+/* ===== INPUT ===== */
+.form-group input {
+  width: full;
+  height: 52px;
+  border: 1px solid #dbe4f0;
+  border-radius: 16px;
+  padding: 0 16px;
+  font-size: 0.96rem;
+  background: #f8fbff;
+  color: #0f172a;
+  outline: none;
+  transition: all 0.25s ease;
+  
+}
+
+.form-group input:focus {
+  border-color: #3b82f6;
+  background: #ffffff;
+  box-shadow: 0 0 0 4px rgba(59, 130, 246, 0.12);
+}
+
+/* ===== CUSTOM DROPDOWN ===== */
+.custom-select-wrapper {
+  position: relative;
+  width: 100%;
+}
+
+.custom-select-box {
+  width: 100%;
+  height: 52px;
+  border: 1px solid #dbe4f0;
+  border-radius: 16px;
+  padding: 0 16px;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  background: linear-gradient(145deg, #f1f5f9, #e2e8f0);
+  cursor: pointer;
+
+  font-size: 0.96rem;
+  font-weight: 500;
+  color: #0f172a;
+
+  transition: all 0.25s ease;
+}
+
+/* placeholder style */
+.custom-select-box.placeholder {
+  color: #94a3b8;
+  font-weight: 400;
+}
+
+.custom-select-box:hover {
+  border-color: #93c5fd;
+}
+
+/* arrow */
+.arrow {
+  font-size: 14px;
+  color: #64748b;
+}
+
+/* dropdown */
+.custom-dropdown {
+  position: absolute;
+  top: 56px;
+  width: 100%;
+  background: #ffffff;
+  border: 1px solid #e2e8f0;
+  border-radius: 14px;
+  box-shadow: 0 12px 25px rgba(0, 0, 0, 0.08);
+  z-index: 100;
+  overflow: hidden;
+}
+
+.dropdown-item {
+  padding: 12px 16px;
+  cursor: pointer;
+  transition: 0.2s;
+}
+
+.dropdown-item:hover {
+  background: #3b82f6;
+  color: white;
+}
+
+/* ===== FORM ACTIONS ===== */
+.form-actions {
+  display: flex;
+  gap: 14px;
+  margin-top: 28px;
+}
+
+.save-btn,
+.cancel-btn {
+  min-width: 150px;
+  height: 50px;
+  border: none;
+  border-radius: 18px;
+  font-size: 0.95rem;
+  font-weight: 700;
+  cursor: pointer;
+  transition: all 0.25s ease;
+}
+
+/* save */
+.save-btn {
+  background: linear-gradient(135deg, #3b82f6, #2563eb);
+  color: white;
+  box-shadow: 0 12px 24px rgba(59, 130, 246, 0.2);
+}
+
+.save-btn:hover {
+  transform: translateY(-2px);
+}
+
+/* cancel */
+.cancel-btn {
+  background: #f8fafc;
+  border: 1px solid #dbe4f0;
+  color: #334155;
+}
+
+.cancel-btn:hover {
+  background: #eef4fb;
+  transform: translateY(-2px);
+}
+
+/* ===== SEARCH ===== */
+.search-box {
+  width: 280px;
+}
+
+.search-box input {
+  width: 100%;
+  height: 48px;
+  border: 1px solid #dbe4f0;
+  border-radius: 16px;
+  padding: 0 16px;
+  background: #f8fbff;
+  outline: none;
+}
+
+.search-box input:focus {
+  border-color: #3b82f6;
+}
+
+/* ===== TABLE ===== */
+.table-wrapper {
+  width: 100%;
+  overflow-x: auto;
+  padding: 0 20px 20px;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  min-width: 900px;
+}
+
+thead {
+  background: #f8fafc;
+}
+
+th {
+  text-align: left;
+  padding: 18px;
+  font-size: 0.92rem;
+  font-weight: 700;
+  color: #334155;
+}
+
+td {
+  padding: 18px;
+  border-bottom: 1px solid #e2e8f0;
+}
+
+/* hover */
+tbody tr:hover {
+  background: rgba(59, 130, 246, 0.03);
+}
+
+/* ===== ACTION BUTTONS ===== */
+.action-buttons {
+  display: flex;
+  gap: 10px;
+}
+
+.edit-btn,
+.delete-btn {
+  padding: 8px 14px;
+  border-radius: 12px;
+  border: none;
+  font-size: 0.85rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: 0.2s;
+}
+
+.edit-btn {
+  background: #dbeafe;
+  color: #1d4ed8;
+}
+
+.edit-btn:hover {
+  transform: translateY(-2px);
+}
+
+.delete-btn {
+  background: #fee2e2;
+  color: #dc2626;
+}
+
+.delete-btn:hover {
+  transform: translateY(-2px);
+}
+
+/* ===== EMPTY ===== */
+.no-data {
+  text-align: center;
+  padding: 28px;
+  color: #64748b;
+}
+
+/* ===== RESPONSIVE ===== */
+@media (max-width: 768px) {
+  .form-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .form-actions {
+    flex-direction: column;
+  }
+
+  .save-btn,
+  .cancel-btn {
+    width: 100%;
+  }
+
+  .search-box {
+    width: 100%;
+  }
+}
+/* =========================
+   GLOBAL FIX (IMPORTANT)
+========================= */
+
+:host {
+  display: block;
+  width: 100%;
+  overflow: visible;
+}
+
+.country-page,
+.country-container {
+  overflow: visible;
+}
+
+/* =========================
+   FORM GRID FIX
+========================= */
+
+.form-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 22px;
+  align-items: start;
+  overflow: visible;
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  position: relative;
+  overflow: visible;
+}
+
+/* =========================
+   SINGLE SELECT (ORG / BRANCH / TYPE)
+========================= */
+
+.custom-select-wrapper {
+  position: relative;
+  width: 100%;
+}
+
+.custom-select-box {
+  height: 52px;
+  border: 1px solid #dbe4f0;
+  border-radius: 16px;
+  padding: 0 16px;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  background: linear-gradient(145deg, #f1f5f9, #e2e8f0);
+  cursor: pointer;
+
+  transition: 0.25s;
+}
+
+.custom-select-box:hover {
+  border-color: #93c5fd;
+  background: #fff;
+}
+
+.custom-select-box.placeholder {
+  color: #94a3b8;
+}
+
+.custom-dropdown {
+  position: absolute;
+  top: calc(100% + 8px);
+  left: 0;
+
+  width: 100%;
+  background: #fff;
+
+  border-radius: 14px;
+  border: 1px solid #e2e8f0;
+
+  box-shadow: 0 20px 40px rgba(0,0,0,0.12);
+  z-index: 99999;
+
+  max-height: 240px;
+  overflow-y: auto;
+}
+
+.dropdown-item {
+  padding: 12px 14px;
+  cursor: pointer;
+  transition: 0.2s;
+}
+
+.dropdown-item:hover {
+  background: #3b82f6;
+  color: #fff;
+}
+
+/* =========================
+   MULTI SELECT (ROLE / PERMISSION)
+========================= */
+
+.multi-select-wrapper {
+  position: relative;
+  width: 100%;
+}
+
+.multi-select-box {
+  min-height: 52px;
+  border: 1px solid #dbe4f0;
+  border-radius: 16px;
+
+  padding: 8px 12px;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  background: linear-gradient(145deg, #f1f5f9, #e2e8f0);
+  cursor: pointer;
+}
+
+/* CHIPS */
+.chips {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+}
+
+.chip {
+  background: #2563eb;
+  color: #fff;
+
+  padding: 4px 10px;
+  border-radius: 999px;
+
+  font-size: 12px;
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.chip span {
+  cursor: pointer;
+  font-weight: bold;
+}
+
+/* MULTI DROPDOWN */
+.multi-dropdown {
+  position: absolute;
+  top: calc(100% + 8px);
+  left: 0;
+
+  width: 100%;
+  background: #fff;
+
+  border-radius: 14px;
+  border: 1px solid #e2e8f0;
+
+  box-shadow: 0 20px 40px rgba(0,0,0,0.12);
+  z-index: 999999;
+
+  max-height: 260px;
+  overflow: hidden;
+}
+
+/* SEARCH */
+.multi-dropdown .search-box {
+  width: 100%;
+  padding: 10px;
+  border: none;
+  border-bottom: 1px solid #e2e8f0;
+  outline: none;
+}
+
+/* LIST */
+.dropdown-list {
+  max-height: 210px;
+  overflow-y: auto;
+}
+
+/* ITEM */
+.multi-dropdown .dropdown-item {
+  padding: 12px;
+  display: flex;
+  gap: 10px;
+  align-items: center;
+}
+
+.multi-dropdown .dropdown-item:hover {
+  background: rgba(59,130,246,0.1);
+}
+
+/* CHECKBOX */
+.multi-dropdown input[type="checkbox"] {
+  accent-color: #2563eb;
+}
+
+/* =========================
+   RESPONSIVE FIX
+========================= */
+
+@media (max-width: 768px) {
+  .form-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .multi-select-box {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 8px;
+  }
+}
+
+/* =========================
+   GLOBAL RESET
+========================= */
+* {
+  box-sizing: border-box;
+}
+
+:host {
+  display: block;
+  width: 100%;
+  min-height: 100%;
+  overflow: visible;
+}
+
+/* =========================
+   PAGE
+========================= */
+.country-page,
+.country-container {
+  width: 100%;
+  min-height: 100%;
+  overflow: visible;
+}
+
+.country-container {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+/* =========================
+   CARDS (IMPORTANT FIX)
+========================= */
+.form-card,
+.table-card {
+  width: 100%;
+  background: rgba(255, 255, 255, 0.82);
+  backdrop-filter: blur(16px);
+  border: 1px solid rgba(226, 232, 240, 0.85);
+  border-radius: 28px;
+  box-shadow: 0 12px 35px rgba(15, 23, 42, 0.05);
+
+  overflow: visible !important;
+  position: relative;
+}
+
+.form-card {
+  z-index: 50;
+}
+
+.table-card {
+  z-index: 1;
+}
+
+/* =========================
+   FORM
+========================= */
+.country-form {
+  padding: 28px;
+  overflow: visible;
+}
+
+.form-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 22px;
+
+  position: relative;
+  overflow: visible;
+}
+
+/* IMPORTANT: keeps dropdown above neighbors */
+.form-group {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+
+  position: relative;
+  overflow: visible;
+  z-index: 1;
+}
+
+/* elevate active dropdown group */
+.form-group.dropdown-open {
+  z-index: 9999;
+}
+
+/* =========================
+   INPUTS
+========================= */
+.form-group input {
+  width: 100%;
+  height: 52px;
+  border: 1px solid #dbe4f0;
+  border-radius: 16px;
+  padding: 0 16px;
+  background: #f8fbff;
+  transition: 0.25s;
+}
+
+.form-group input:focus {
+  border-color: #3b82f6;
+  background: #fff;
+  box-shadow: 0 0 0 4px rgba(59,130,246,0.12);
+}
+
+/* =========================
+   SINGLE DROPDOWN
+========================= */
+.custom-select-wrapper {
+  position: relative;
+  overflow: visible;
+}
+
+.custom-select-box {
+  height: 52px;
+  border-radius: 16px;
+  border: 1px solid #dbe4f0;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  padding: 0 16px;
+  cursor: pointer;
+
+  background: linear-gradient(145deg, #f1f5f9, #e2e8f0);
+}
+
+.custom-dropdown {
+  position: absolute;
+  top: calc(100% + 8px);
+  left: 0;
+  width: 100%;
+
+  background: #fff;
+  border-radius: 16px;
+
+  border: 1px solid #e2e8f0;
+  box-shadow: 0 20px 40px rgba(0,0,0,0.12);
+
+  z-index: 999999;
+
+  max-height: 240px;
+  overflow-y: auto;
+}
+
+/* =========================
+   MULTI SELECT (ROLE/PERMISSION FIX)
+========================= */
+.multi-select-wrapper {
+  position: relative;
+  width: 100%;
+}
+
+.multi-select-box {
+  min-height: 52px;
+  border-radius: 16px;
+  border: 1px solid #dbe4f0;
+
+  padding: 10px 12px;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  background: linear-gradient(145deg, #f1f5f9, #e2e8f0);
+
+  cursor: pointer;
+}
+
+/* CHIPS */
+.chips {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+}
+
+.chip {
+  background: #2563eb;
+  color: #fff;
+
+  padding: 4px 10px;
+  border-radius: 999px;
+
+  font-size: 12px;
+
+  display: flex;
+  gap: 6px;
+  align-items: center;
+}
+
+.chip span {
+  cursor: pointer;
+  font-weight: bold;
+}
+
+/* =========================
+   MULTI DROPDOWN (IMPORTANT FIX)
+========================= */
+.multi-dropdown {
+  position: absolute;
+  top: calc(100% + 8px);
+  left: 0;
+  width: 100%;
+
+  background: #fff;
+  border-radius: 16px;
+
+  border: 1px solid #e2e8f0;
+  box-shadow: 0 20px 40px rgba(0,0,0,0.15);
+
+  z-index: 999999;
+
+  max-height: 260px;
+  overflow: hidden;
+}
+
+/* search */
+.multi-dropdown .search-box {
+  width: 100%;
+  padding: 10px;
+  border: none;
+  border-bottom: 1px solid #e2e8f0;
+  outline: none;
+}
+
+/* list */
+.dropdown-list {
+  max-height: 210px;
+  overflow-y: auto;
+}
+
+.dropdown-item {
+  padding: 12px;
+  display: flex;
+  gap: 10px;
+  align-items: center;
+  cursor: pointer;
+}
+
+.dropdown-item:hover {
+  background: rgba(59,130,246,0.12);
+}
+
+/* checkbox fix */
+.dropdown-item input {
+  accent-color: #2563eb;
+}
+
+/* =========================
+   TABLE FIX
+========================= */
+.table-wrapper {
+  position: relative;
+  z-index: 1;
+  overflow-x: auto;
+}
+
+/* =========================
+   RESPONSIVE
+========================= */
+@media (max-width: 768px) {
+  .form-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+/* FIX ACTION DROPDOWN ALIGNMENT */
+.dropdown-item {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  padding: 12px 14px;
+  gap: 10px;
+}
+
+/* label wraps checkbox + text properly */
+.dropdown-item .item-label {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  width: 100%;
+  cursor: pointer;
+}
+
+/* checkbox size fix */
+.dropdown-item input[type="checkbox"] {
+  width: 16px;
+  height: 16px;
+  accent-color: #2563eb;
+  flex-shrink: 0;
+}
+
+/* text alignment fix */
+.dropdown-item span {
+  font-size: 0.92rem;
+  color: #0f172a;
+}
+
+/* hover fix */
+.dropdown-item:hover {
+  background: rgba(59, 130, 246, 0.10);
+}
+/* LIST CONTAINER */
+.dropdown-list {
+  max-height: 260px;
+  overflow-y: auto;
+  padding: 6px;
+}
+
+/* EACH ROW */
+.dropdown-item {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+
+  padding: 10px 12px;
+  border-radius: 10px;
+
+  cursor: pointer;
+
+  transition: 0.2s ease;
+}
+
+/* HOVER LIKE MODERN UI */
+.dropdown-item:hover {
+  background: #f1f5ff;
+}
+
+/* CHECKBOX */
+.dropdown-item input[type="checkbox"] {
+  width: 16px;
+  height: 16px;
+  accent-color: #2563eb;
+  cursor: pointer;
+}
+
+/* TEXT */
+.item-text {
+  font-size: 0.95rem;
+  color: #0f172a;
+}
+
+/* SELECTED STATE (OPTIONAL BUT NICE) */
+.dropdown-item.selected {
+  background: rgba(37, 99, 235, 0.08);
+}
+
+.action-tag {
+  display: inline-flex;
+  align-items: center;
+
+  padding: 3px 10px;
+  margin: 3px 5px 3px 0;
+
+  font-size: 12px;
+  font-weight: 500;
+  color: #0f172a;
+
+  background: #f1f5f9;
+  border: 1px solid #cbd5e1;
+
+  border-radius: 999px;
+
+  line-height: 1;
+  white-space: nowrap;
+
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.05);
+}
+
+

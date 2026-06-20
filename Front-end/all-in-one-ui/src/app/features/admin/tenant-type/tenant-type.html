@@ -1,0 +1,89 @@
+<div class="tenant-page">
+  <div class="tenant-container">
+
+    <!-- FORM SECTION -->
+    <div class="form-card">
+      <div class="form-header">
+        <h2>{{ isEditMode ? 'Edit Tenant Type' : 'Create Tenant Type' }}</h2>
+      </div>
+
+      <form [formGroup]="tenantForm" (ngSubmit)="onSubmit()" class="tenant-form">
+
+        <div class="form-grid">
+
+          <!-- TYPE NAME -->
+          <div class="form-group full-width">
+            <label>Type Name</label>
+            <input type="text" formControlName="typeName" placeholder="Enter type name" (keypress)="allowOnlyLetters($event)"/>
+            <!-- <small *ngIf="hasError('typeName')" class="error">Type Name is required</small> -->
+          </div>
+
+          <!-- DESCRIPTION (FULL WIDTH BELOW) -->
+          <div class="form-group full-width">
+            <label>Description</label>
+            <textarea formControlName="description" placeholder="Enter description" (keypress)="allowOnlyLetters($event)"></textarea>
+          </div>
+
+        </div>
+
+        <!-- BUTTONS -->
+        <div class="form-actions">
+          <button type="submit" class="save-btn">
+            {{ isEditMode ? 'Update Tenant Type' : 'Save Tenant Type' }}
+          </button>
+
+          <button type="button" class="cancel-btn" (click)="resetForm()">
+            Reset
+          </button>
+        </div>
+
+      </form>
+    </div>
+
+    <!-- TABLE SECTION -->
+    <div class="table-card">
+      <div class="table-header">
+        <h2>Tenant Type List</h2>
+
+        <div class="search-box">
+          <input
+            type="text"
+            [(ngModel)]="searchText"
+            placeholder="Search tenant types..."
+          />
+        </div>
+      </div>
+
+      <div class="table-wrapper">
+        <table>
+          <thead>
+            <tr>
+              <th>ID</th>
+              <th>Type Name</th>
+              <th>Description</th>
+              <th>Actions</th>
+            </tr>
+          </thead>
+
+          <tbody>
+            <tr *ngFor="let t of filteredTenantTypes">
+              <td>{{ t.tenantTypeId }}</td>
+              <td>{{ t.typeName }}</td>
+              <td>{{ t.description }}</td>
+
+              <td class="action-buttons">
+                <button class="edit-btn" (click)="edit(t)">Edit</button>
+                <button class="delete-btn" (click)="delete(t.tenantTypeId)">Delete</button>
+              </td>
+            </tr>
+
+            <tr *ngIf="filteredTenantTypes.length === 0">
+              <td colspan="4" class="no-data">No data found</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+
+  </div>
+</div>

@@ -1,0 +1,10 @@
+{
+  "version": 2,
+  "dgSpecHash": "QVoCxjD5qLQ=",
+  "success": true,
+  "projectFilePath": "E:\\All_in_One\\All_In_One\\All_In_One.Web\\All_In_One.Web.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\Lenovo\\.nuget\\packages\\microsoft.aspnetcore.app.internal.assets\\10.0.5\\microsoft.aspnetcore.app.internal.assets.10.0.5.nupkg.sha512"
+  ],
+  "logs": []
+}

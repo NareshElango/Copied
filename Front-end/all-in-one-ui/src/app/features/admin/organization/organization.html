@@ -1,0 +1,250 @@
+<div class="country-page">
+  <div class="country-container">
+
+    <!-- FORM -->
+    <div class="form-card">
+      <div class="form-header">
+        <h2>{{ isEditMode ? 'Edit Organization' : 'Create Organization' }}</h2>
+      </div>
+
+      <form [formGroup]="orgForm" (ngSubmit)="onSubmit()" class="country-form">
+
+        <div class="form-grid">
+
+          <!-- CODE -->
+          <div class="form-group">
+            <label>Organization Code</label>
+            <input formControlName="organizationCode" placeholder="Enter code"  (keydown)="allowAlphaNumeric($event)"/>
+            <!-- <small
+  *ngIf="orgForm.get('organizationCode')?.hasError('pattern')"
+  class="error">
+  Only letters and numbers are allowed
+</small> -->
+            <!-- <small *ngIf="hasError('organizationCode')" class="error">
+              Code is required
+            </small> -->
+          </div>
+
+          <!-- NAME -->
+          <div class="form-group">
+            <label>Organization Name</label>
+            <input formControlName="organizationName" placeholder="Enter name"  (keypress)="allowOnlyLetters($event)"/>
+            <!-- <small *ngIf="hasError('organizationName')" class="error">
+              Name is required
+            </small> -->
+          </div>
+
+          <!-- COUNTRY -->
+          <div class="form-group">
+            <label>Country</label>
+
+            <div class="custom-select-wrapper">
+              <div class="custom-select-box" (click)="toggleCountryDropdown()"
+                [class.placeholder]="!selectedCountryName">
+
+                {{ selectedCountryName || 'Select Country' }}
+                <span class="arrow">▾</span>
+              </div>
+
+              <div class="custom-dropdown" *ngIf="isCountryDropdownOpen">
+                <!-- NO Country -->
+                <div *ngIf="countries.length === 0" class="dropdown-item no-records">
+                  No records found
+                </div>
+                <div class="dropdown-item" *ngFor="let c of countries" (click)="selectCountry(c)">
+                  {{ c.countryName }}
+                </div>
+              </div>
+            </div>
+
+            <!-- <small *ngIf="showCountryError" class="error">
+              Country is required
+            </small> -->
+          </div>
+
+          <!-- STATE -->
+          <div class="form-group">
+            <label>State</label>
+
+            <div class="custom-select-wrapper">
+              <div class="custom-select-box" (click)="toggleStateDropdown()" [class.placeholder]="!selectedStateName">
+
+                {{ selectedStateName || 'Select State' }}
+                <span class="arrow">▾</span>
+              </div>
+
+              <div class="custom-dropdown" *ngIf="isStateDropdownOpen">
+                <div *ngIf="!orgForm.value.countryId" class="dropdown-item no-records">
+                  Select country first
+                </div>
+
+                <!-- NO STATES -->
+                <div *ngIf="orgForm.value.countryId && states.length === 0" class="dropdown-item no-records">
+                  No records found
+                </div>
+                <div class="dropdown-item" *ngFor="let s of states" (click)="selectState(s)">
+                  {{ s.stateName }}
+                </div>
+              </div>
+            </div>
+
+            <!-- <small *ngIf="showStateError" class="error">
+              State is required
+            </small> -->
+          </div>
+          <!-- DISTRICT -->
+          <!-- DISTRICT -->
+          <div class="form-group">
+            <label>District</label>
+
+            <div class="custom-select-wrapper">
+              <div class="custom-select-box" (click)="toggleDistrictDropdown()"
+                [class.placeholder]="!selectedDistrictName">
+
+                {{ selectedDistrictName || 'Select District' }}
+                <span class="arrow">▾</span>
+              </div>
+
+              <div class="custom-dropdown" *ngIf="isDistrictDropdownOpen">
+
+                <!-- NO STATE SELECTED -->
+                <div *ngIf="!orgForm.value.stateId" class="dropdown-item no-records">
+                  Select state first
+                </div>
+
+                <!-- NO DISTRICTS -->
+                <div *ngIf="orgForm.value.stateId && districts.length === 0" class="dropdown-item no-records">
+                  No records found
+                </div>
+
+                <!-- DATA -->
+                <div *ngIf="districts.length > 0">
+                  <div class="dropdown-item" *ngFor="let d of districts" (click)="selectDistrict(d)">
+                    {{ d.districtName }}
+                  </div>
+                </div>
+
+              </div>
+            </div>
+
+            <!-- <small *ngIf="showDistrictError" class="error">
+              District is required
+            </small> -->
+          </div>
+          <!-- TENANT TYPE -->
+          <div class="form-group">
+            <label>Tenant Type</label>
+
+            <div class="custom-select-wrapper">
+              <div class="custom-select-box" (click)="toggleTenantDropdown()" [class.placeholder]="!selectedTenantName">
+
+                {{ selectedTenantName || 'Select Tenant Type' }}
+                <span class="arrow">▾</span>
+              </div>
+
+              <div class="custom-dropdown" *ngIf="isTenantDropdownOpen">
+                <!-- NO Tenant types -->
+                <div *ngIf="tenantTypes.length === 0" class="dropdown-item no-records">
+                  No records found
+                </div>
+                <div class="dropdown-item" *ngFor="let t of tenantTypes" (click)="selectTenant(t)">
+                  {{ t.typeName }}
+                </div>
+              </div>
+            </div>
+
+            <!-- <small *ngIf="showTenantError" class="error">
+              Tenant Type is required
+            </small> -->
+          </div>
+
+
+
+          <!-- EMAIL -->
+          <div class="form-group">
+            <label>Email</label>
+            <input formControlName="email" placeholder="Enter email" />
+            <!-- <small
+  *ngIf="orgForm.get('email')?.hasError('email')"
+  class="error">
+  Enter a valid email address
+</small> -->
+          </div>
+
+          <!-- PHONE -->
+          <div class="form-group">
+            <label>Phone</label>
+            <input formControlName="phone" placeholder="Enter phone" (keypress)="allowOnlyNumbers($event)"/>
+          </div>
+
+        </div>
+
+        <!-- BUTTONS -->
+        <div class="form-actions">
+          <button type="submit" class="save-btn">
+            {{ isEditMode ? 'Update Organization' : 'Save Organization' }}
+          </button>
+
+          <button type="button" class="cancel-btn" (click)="resetForm()">
+            Reset
+          </button>
+        </div>
+
+      </form>
+    </div>
+
+    <!-- TABLE -->
+    <div class="table-card">
+      <div class="table-header">
+        <h2>Organization List</h2>
+
+        <div class="search-box">
+          <input [(ngModel)]="searchText" (input)="applySearch()" placeholder="Search organization..." />
+        </div>
+      </div>
+
+      <div class="table-wrapper">
+        <table>
+          <thead>
+            <tr>
+              <th>ID</th>
+              <th>Code</th>
+              <th>Name</th>
+              <th>Tenant</th>
+              <th>Country</th>
+              <th>State</th>
+              <th>District</th>
+              <th>Email</th>
+              <th>Phone</th>
+              <th>Actions</th>
+            </tr>
+          </thead>
+
+          <tbody>
+            <tr *ngFor="let o of filteredOrganizations">
+              <td>{{ o.organizationId }}</td>
+              <td>{{ o.organizationCode }}</td>
+              <td>{{ o.organizationName }}</td>
+              <td>{{ o.tenantTypeName }}</td>
+              <td>{{ o.countryName }}</td>
+              <td>{{ o.stateName }}</td>
+              <td>{{ o.districtName }}</td>
+              <td>{{ o.email }}</td>
+              <td>{{ o.phone }}</td>
+              <td class="action-buttons">
+                <button class="edit-btn" (click)="editOrganization(o)">Edit</button>
+                <button class="delete-btn" (click)="deleteOrganization(o.organizationId)">Delete</button>
+              </td>
+            </tr>
+
+            <tr *ngIf="filteredOrganizations.length === 0">
+              <td colspan="10" class="no-data">No organizations found</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+
+    </div>
+
+  </div>
+</div>

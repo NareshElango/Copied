@@ -1,0 +1,97 @@
+<div class="country-page">
+  <div class="country-container">
+
+    <!-- FORM -->
+    <div class="form-card">
+
+      <div class="form-header">
+        <h2>{{ isEditMode ? 'Edit User Type' : 'Create User Type' }}</h2>
+      </div>
+
+      <form [formGroup]="userTypeForm" (ngSubmit)="onSubmit()" class="country-form">
+
+        <div class="form-grid">
+
+          <!-- USER TYPE NAME -->
+          <div class="form-group">
+            <label>User Type Name</label>
+
+            <input type="text" formControlName="typeName" placeholder="Enter user type name" (keypress)="allowOnlyLetters($event)"/>
+
+            <small *ngIf="hasError('typeName')" class="error">
+              User Type Name is required
+            </small>
+          </div>
+
+        </div>
+
+        <!-- BUTTONS -->
+        <div class="form-actions">
+
+          <button type="submit" class="save-btn">
+            {{ isEditMode ? 'Update User Type' : 'Save User Type' }}
+          </button>
+
+          <button type="button" class="cancel-btn" (click)="resetForm()">
+            Reset
+          </button>
+
+        </div>
+
+      </form>
+
+    </div>
+
+    <!-- TABLE -->
+    <div class="table-card">
+
+      <div class="table-header">
+
+        <h2>User Type List</h2>
+
+        <div class="search-box">
+          <input type="text" [(ngModel)]="searchText" (input)="applySearch()" placeholder="Search user types..." />
+        </div>
+
+      </div>
+
+      <div class="table-wrapper">
+
+        <table>
+
+          <thead>
+            <tr>
+              <th>ID</th>
+              <th>User Type Name</th>
+              <th>Actions</th>
+            </tr>
+          </thead>
+
+          <tbody>
+
+            <tr *ngFor="let t of filteredUserTypes">
+              <td>{{ t.userTypeId }}</td>
+              <td>{{ t.typeName }}</td>
+
+              <td class="action-buttons">
+                <button class="edit-btn" (click)="editUserType(t)">Edit</button>
+                <button class="delete-btn" (click)="deleteUserType(t.userTypeId)">Delete</button>
+              </td>
+            </tr>
+
+            <tr *ngIf="filteredUserTypes.length === 0">
+              <td colspan="3" class="no-data">
+                No user types found
+              </td>
+            </tr>
+
+          </tbody>
+
+        </table>
+
+      </div>
+
+    </div>
+
+  </div>
+</div>

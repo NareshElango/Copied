@@ -1,0 +1,86 @@
+<div class="admin-shell">
+  <!-- Sidebar -->
+  <aside class="sidebar">
+    <div class="sidebar-top">
+      <div class="logo-box">
+        <div class="logo-icon">A</div>
+        <div>
+          <h2>All-In-One</h2>
+          <p>SaaS Admin</p>
+        </div>
+      </div>
+    </div>
+
+    <nav class="sidebar-nav">
+      <!-- Dashboard -->
+      <a routerLink="/admin/dashboard" routerLinkActive="active-link" class="nav-item">
+        <span class="nav-icon">🏠</span>
+        <span>Dashboard</span>
+      </a>
+
+      <!-- Admin Activities -->
+      <div class="menu-group">
+        <button class="menu-toggle" (click)="toggleAdminMenu()">
+          <div class="menu-toggle-left">
+            <span class="nav-icon">⚙️</span>
+            <span>Admin Activities</span>
+          </div>
+          <span class="arrow" [class.rotate]="adminMenuOpen">⌄</span>
+        </button>
+
+        <div class="submenu" [class.open]="adminMenuOpen">
+          <a routerLink="/admin/country" routerLinkActive="active-sub-link" class="sub-item">🌍 Country</a>
+          <a routerLink="/admin/state" routerLinkActive="active-sub-link" class="sub-item">🗺️ State</a>
+          <a routerLink="/admin/district" routerLinkActive="active-sub-link" class="sub-item">📍 District</a>
+          <a routerLink="/admin/division" routerLinkActive="active-sub-link" class="sub-item">🏢 Division</a>
+          <a routerLink="/admin/tenant-type" routerLinkActive="active-sub-link" class="sub-item">🧩 Tenant Type</a>
+          <a routerLink="/admin/organization" routerLinkActive="active-sub-link" class="sub-item">🏛️ Organization</a>
+          <a routerLink="/admin/branch" routerLinkActive="active-sub-link" class="sub-item">🏬 Branch</a>
+          <a routerLink="/admin/roles" routerLinkActive="active-sub-link" class="sub-item">🔐 Roles</a>
+          <a routerLink="/admin/permissions" routerLinkActive="active-sub-link" class="sub-item">🛡️ Permissions</a>
+          <a routerLink="/admin/users" routerLinkActive="active-sub-link" class="sub-item">👤 Users</a>
+          <a routerLink="/admin/subscription-plans" routerLinkActive="active-sub-link" class="sub-item">💳 Subscription Plans</a>
+        </div>
+      </div>
+
+      <!-- Other -->
+      <a routerLink="/admin/reports" routerLinkActive="active-link" class="nav-item">
+        <span class="nav-icon">📊</span>
+        <span>Reports</span>
+      </a>
+
+      <a routerLink="/admin/settings" routerLinkActive="active-link" class="nav-item">
+        <span class="nav-icon">⚙️</span>
+        <span>Settings</span>
+      </a>
+    </nav>
+
+    <div class="sidebar-bottom">
+      <button class="logout-btn" (click)="logout()">
+        🚪 Logout
+      </button>
+    </div>
+  </aside>
+
+  <!-- Main Content -->
+  <main class="main-area">
+    <header class="topbar">
+      <div>
+        <h1>Admin Panel</h1>
+        <p>Manage your SaaS platform modules</p>
+      </div>
+
+      <div class="profile-chip">
+        <div class="profile-avatar">N</div>
+        <div>
+          <strong>Naresh</strong>
+          <p>Administrator</p>
+        </div>
+      </div>
+    </header>
+
+    <section class="page-content">
+      <router-outlet></router-outlet>
+    </section>
+  </main>
+</div>

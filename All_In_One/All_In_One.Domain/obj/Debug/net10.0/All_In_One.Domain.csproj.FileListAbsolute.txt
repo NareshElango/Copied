@@ -1,0 +1,12 @@
+E:\All_in_One\All_In_One\All_In_One.Domain\bin\Debug\net10.0\All_In_One.Domain.deps.json
+E:\All_in_One\All_In_One\All_In_One.Domain\bin\Debug\net10.0\All_In_One.Domain.dll
+E:\All_in_One\All_In_One\All_In_One.Domain\bin\Debug\net10.0\All_In_One.Domain.pdb
+E:\All_in_One\All_In_One\All_In_One.Domain\obj\Debug\net10.0\All_In_One.Domain.GeneratedMSBuildEditorConfig.editorconfig
+E:\All_in_One\All_In_One\All_In_One.Domain\obj\Debug\net10.0\All_In_One.Domain.AssemblyInfoInputs.cache
+E:\All_in_One\All_In_One\All_In_One.Domain\obj\Debug\net10.0\All_In_One.Domain.AssemblyInfo.cs
+E:\All_in_One\All_In_One\All_In_One.Domain\obj\Debug\net10.0\All_In_One.Domain.csproj.CoreCompileInputs.cache
+E:\All_in_One\All_In_One\All_In_One.Domain\obj\Debug\net10.0\All_In_One.Domain.sourcelink.json
+E:\All_in_One\All_In_One\All_In_One.Domain\obj\Debug\net10.0\All_In_One.Domain.dll
+E:\All_in_One\All_In_One\All_In_One.Domain\obj\Debug\net10.0\refint\All_In_One.Domain.dll
+E:\All_in_One\All_In_One\All_In_One.Domain\obj\Debug\net10.0\All_In_One.Domain.pdb
+E:\All_in_One\All_In_One\All_In_One.Domain\obj\Debug\net10.0\ref\All_In_One.Domain.dll

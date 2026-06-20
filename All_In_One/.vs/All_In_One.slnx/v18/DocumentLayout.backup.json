@@ -1,0 +1,1179 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "E:\\All_in_One\\All_In_One\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{92FB36F5-1534-073C-570D-C56577C8F528}|All_In_One.API\\All_In_One.API.csproj|e:\\all_in_one\\all_in_one\\all_in_one.api\\controllers\\organizationcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{92FB36F5-1534-073C-570D-C56577C8F528}|All_In_One.API\\All_In_One.API.csproj|solutionrelative:all_in_one.api\\controllers\\organizationcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{92FB36F5-1534-073C-570D-C56577C8F528}|All_In_One.API\\All_In_One.API.csproj|e:\\all_in_one\\all_in_one\\all_in_one.api\\controllers\\tenanttypecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{92FB36F5-1534-073C-570D-C56577C8F528}|All_In_One.API\\All_In_One.API.csproj|solutionrelative:all_in_one.api\\controllers\\tenanttypecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{92FB36F5-1534-073C-570D-C56577C8F528}|All_In_One.API\\All_In_One.API.csproj|e:\\all_in_one\\all_in_one\\all_in_one.api\\controllers\\organizationbranchcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{92FB36F5-1534-073C-570D-C56577C8F528}|All_In_One.API\\All_In_One.API.csproj|solutionrelative:all_in_one.api\\controllers\\organizationbranchcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{92FB36F5-1534-073C-570D-C56577C8F528}|All_In_One.API\\All_In_One.API.csproj|e:\\all_in_one\\all_in_one\\all_in_one.api\\dtos\\usercreatedto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{92FB36F5-1534-073C-570D-C56577C8F528}|All_In_One.API\\All_In_One.API.csproj|solutionrelative:all_in_one.api\\dtos\\usercreatedto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{92FB36F5-1534-073C-570D-C56577C8F528}|All_In_One.API\\All_In_One.API.csproj|e:\\all_in_one\\all_in_one\\all_in_one.api\\controllers\\usercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{92FB36F5-1534-073C-570D-C56577C8F528}|All_In_One.API\\All_In_One.API.csproj|solutionrelative:all_in_one.api\\controllers\\usercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5F3DDBDE-B116-74AF-D3C7-B3F467C9BF69}|All_In_One.Data\\All_In_One.Data.csproj|e:\\all_in_one\\all_in_one\\all_in_one.data\\context\\applicationdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5F3DDBDE-B116-74AF-D3C7-B3F467C9BF69}|All_In_One.Data\\All_In_One.Data.csproj|solutionrelative:all_in_one.data\\context\\applicationdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5AEA1E92-CB31-36A1-2BAA-2E078FC78485}|All_In_One.Domain\\All_In_One.Domain.csproj|e:\\all_in_one\\all_in_one\\all_in_one.domain\\entities\\security\\user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5AEA1E92-CB31-36A1-2BAA-2E078FC78485}|All_In_One.Domain\\All_In_One.Domain.csproj|solutionrelative:all_in_one.domain\\entities\\security\\user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5F3DDBDE-B116-74AF-D3C7-B3F467C9BF69}|All_In_One.Data\\All_In_One.Data.csproj|e:\\all_in_one\\all_in_one\\all_in_one.data\\migrations\\20260617173825_changeuserroletodirectfk.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5F3DDBDE-B116-74AF-D3C7-B3F467C9BF69}|All_In_One.Data\\All_In_One.Data.csproj|solutionrelative:all_in_one.data\\migrations\\20260617173825_changeuserroletodirectfk.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5AEA1E92-CB31-36A1-2BAA-2E078FC78485}|All_In_One.Domain\\All_In_One.Domain.csproj|e:\\all_in_one\\all_in_one\\all_in_one.domain\\entities\\security\\role.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5AEA1E92-CB31-36A1-2BAA-2E078FC78485}|All_In_One.Domain\\All_In_One.Domain.csproj|solutionrelative:all_in_one.domain\\entities\\security\\role.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5F3DDBDE-B116-74AF-D3C7-B3F467C9BF69}|All_In_One.Data\\All_In_One.Data.csproj|e:\\all_in_one\\all_in_one\\all_in_one.data\\context\\applicationdbcontextfactory.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5F3DDBDE-B116-74AF-D3C7-B3F467C9BF69}|All_In_One.Data\\All_In_One.Data.csproj|solutionrelative:all_in_one.data\\context\\applicationdbcontextfactory.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{92FB36F5-1534-073C-570D-C56577C8F528}|All_In_One.API\\All_In_One.API.csproj|e:\\all_in_one\\all_in_one\\all_in_one.api\\dtos\\userdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{92FB36F5-1534-073C-570D-C56577C8F528}|All_In_One.API\\All_In_One.API.csproj|solutionrelative:all_in_one.api\\dtos\\userdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{92FB36F5-1534-073C-570D-C56577C8F528}|All_In_One.API\\All_In_One.API.csproj|e:\\all_in_one\\all_in_one\\all_in_one.api\\dtos\\userroledto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{92FB36F5-1534-073C-570D-C56577C8F528}|All_In_One.API\\All_In_One.API.csproj|solutionrelative:all_in_one.api\\dtos\\userroledto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{92FB36F5-1534-073C-570D-C56577C8F528}|All_In_One.API\\All_In_One.API.csproj|e:\\all_in_one\\all_in_one\\all_in_one.api\\dtos\\tenanttypedto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{92FB36F5-1534-073C-570D-C56577C8F528}|All_In_One.API\\All_In_One.API.csproj|solutionrelative:all_in_one.api\\dtos\\tenanttypedto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5F3DDBDE-B116-74AF-D3C7-B3F467C9BF69}|All_In_One.Data\\All_In_One.Data.csproj|e:\\all_in_one\\all_in_one\\all_in_one.data\\migrations\\20260611174816_addroledescription.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5F3DDBDE-B116-74AF-D3C7-B3F467C9BF69}|All_In_One.Data\\All_In_One.Data.csproj|solutionrelative:all_in_one.data\\migrations\\20260611174816_addroledescription.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{92FB36F5-1534-073C-570D-C56577C8F528}|All_In_One.API\\All_In_One.API.csproj|e:\\all_in_one\\all_in_one\\all_in_one.api\\controllers\\rolecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{92FB36F5-1534-073C-570D-C56577C8F528}|All_In_One.API\\All_In_One.API.csproj|solutionrelative:all_in_one.api\\controllers\\rolecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{92FB36F5-1534-073C-570D-C56577C8F528}|All_In_One.API\\All_In_One.API.csproj|e:\\all_in_one\\all_in_one\\all_in_one.api\\dtos\\roledto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{92FB36F5-1534-073C-570D-C56577C8F528}|All_In_One.API\\All_In_One.API.csproj|solutionrelative:all_in_one.api\\dtos\\roledto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{92FB36F5-1534-073C-570D-C56577C8F528}|All_In_One.API\\All_In_One.API.csproj|e:\\all_in_one\\all_in_one\\all_in_one.api\\dtos\\actiondto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{92FB36F5-1534-073C-570D-C56577C8F528}|All_In_One.API\\All_In_One.API.csproj|solutionrelative:all_in_one.api\\dtos\\actiondto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5AEA1E92-CB31-36A1-2BAA-2E078FC78485}|All_In_One.Domain\\All_In_One.Domain.csproj|e:\\all_in_one\\all_in_one\\all_in_one.domain\\entities\\security\\actions.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5AEA1E92-CB31-36A1-2BAA-2E078FC78485}|All_In_One.Domain\\All_In_One.Domain.csproj|solutionrelative:all_in_one.domain\\entities\\security\\actions.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5AEA1E92-CB31-36A1-2BAA-2E078FC78485}|All_In_One.Domain\\All_In_One.Domain.csproj|e:\\all_in_one\\all_in_one\\all_in_one.domain\\entities\\security\\actionrole.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5AEA1E92-CB31-36A1-2BAA-2E078FC78485}|All_In_One.Domain\\All_In_One.Domain.csproj|solutionrelative:all_in_one.domain\\entities\\security\\actionrole.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{92FB36F5-1534-073C-570D-C56577C8F528}|All_In_One.API\\All_In_One.API.csproj|e:\\all_in_one\\all_in_one\\all_in_one.api\\controllers\\actioncontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{92FB36F5-1534-073C-570D-C56577C8F528}|All_In_One.API\\All_In_One.API.csproj|solutionrelative:all_in_one.api\\controllers\\actioncontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5AEA1E92-CB31-36A1-2BAA-2E078FC78485}|All_In_One.Domain\\All_In_One.Domain.csproj|e:\\all_in_one\\all_in_one\\all_in_one.domain\\entities\\security\\userpermission.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5AEA1E92-CB31-36A1-2BAA-2E078FC78485}|All_In_One.Domain\\All_In_One.Domain.csproj|solutionrelative:all_in_one.domain\\entities\\security\\userpermission.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{92FB36F5-1534-073C-570D-C56577C8F528}|All_In_One.API\\All_In_One.API.csproj|e:\\all_in_one\\all_in_one\\all_in_one.api\\controllers\\authcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{92FB36F5-1534-073C-570D-C56577C8F528}|All_In_One.API\\All_In_One.API.csproj|solutionrelative:all_in_one.api\\controllers\\authcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{92FB36F5-1534-073C-570D-C56577C8F528}|All_In_One.API\\All_In_One.API.csproj|e:\\all_in_one\\all_in_one\\all_in_one.api\\controllers\\statecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{92FB36F5-1534-073C-570D-C56577C8F528}|All_In_One.API\\All_In_One.API.csproj|solutionrelative:all_in_one.api\\controllers\\statecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{92FB36F5-1534-073C-570D-C56577C8F528}|All_In_One.API\\All_In_One.API.csproj|e:\\all_in_one\\all_in_one\\all_in_one.api\\controllers\\divisioncontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{92FB36F5-1534-073C-570D-C56577C8F528}|All_In_One.API\\All_In_One.API.csproj|solutionrelative:all_in_one.api\\controllers\\divisioncontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5AEA1E92-CB31-36A1-2BAA-2E078FC78485}|All_In_One.Domain\\All_In_One.Domain.csproj|e:\\all_in_one\\all_in_one\\all_in_one.domain\\entities\\security\\rolepermission.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5AEA1E92-CB31-36A1-2BAA-2E078FC78485}|All_In_One.Domain\\All_In_One.Domain.csproj|solutionrelative:all_in_one.domain\\entities\\security\\rolepermission.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5AEA1E92-CB31-36A1-2BAA-2E078FC78485}|All_In_One.Domain\\All_In_One.Domain.csproj|e:\\all_in_one\\all_in_one\\all_in_one.domain\\entities\\security\\userrole.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5AEA1E92-CB31-36A1-2BAA-2E078FC78485}|All_In_One.Domain\\All_In_One.Domain.csproj|solutionrelative:all_in_one.domain\\entities\\security\\userrole.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5AEA1E92-CB31-36A1-2BAA-2E078FC78485}|All_In_One.Domain\\All_In_One.Domain.csproj|e:\\all_in_one\\all_in_one\\all_in_one.domain\\entities\\security\\permission.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5AEA1E92-CB31-36A1-2BAA-2E078FC78485}|All_In_One.Domain\\All_In_One.Domain.csproj|solutionrelative:all_in_one.domain\\entities\\security\\permission.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{92FB36F5-1534-073C-570D-C56577C8F528}|All_In_One.API\\All_In_One.API.csproj|e:\\all_in_one\\all_in_one\\all_in_one.api\\controllers\\districtcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{92FB36F5-1534-073C-570D-C56577C8F528}|All_In_One.API\\All_In_One.API.csproj|solutionrelative:all_in_one.api\\controllers\\districtcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5AEA1E92-CB31-36A1-2BAA-2E078FC78485}|All_In_One.Domain\\All_In_One.Domain.csproj|e:\\all_in_one\\all_in_one\\all_in_one.domain\\entities\\chatbot\\chatcommand.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5AEA1E92-CB31-36A1-2BAA-2E078FC78485}|All_In_One.Domain\\All_In_One.Domain.csproj|solutionrelative:all_in_one.domain\\entities\\chatbot\\chatcommand.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{92FB36F5-1534-073C-570D-C56577C8F528}|All_In_One.API\\All_In_One.API.csproj|e:\\all_in_one\\all_in_one\\all_in_one.api\\controllers\\usertypecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{92FB36F5-1534-073C-570D-C56577C8F528}|All_In_One.API\\All_In_One.API.csproj|solutionrelative:all_in_one.api\\controllers\\usertypecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{92FB36F5-1534-073C-570D-C56577C8F528}|All_In_One.API\\All_In_One.API.csproj|e:\\all_in_one\\all_in_one\\all_in_one.api\\dtos\\usertypedto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{92FB36F5-1534-073C-570D-C56577C8F528}|All_In_One.API\\All_In_One.API.csproj|solutionrelative:all_in_one.api\\dtos\\usertypedto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5AEA1E92-CB31-36A1-2BAA-2E078FC78485}|All_In_One.Domain\\All_In_One.Domain.csproj|e:\\all_in_one\\all_in_one\\all_in_one.domain\\entities\\security\\usertype.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5AEA1E92-CB31-36A1-2BAA-2E078FC78485}|All_In_One.Domain\\All_In_One.Domain.csproj|solutionrelative:all_in_one.domain\\entities\\security\\usertype.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{92FB36F5-1534-073C-570D-C56577C8F528}|All_In_One.API\\All_In_One.API.csproj|e:\\all_in_one\\all_in_one\\all_in_one.api\\controllers\\countrycontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{92FB36F5-1534-073C-570D-C56577C8F528}|All_In_One.API\\All_In_One.API.csproj|solutionrelative:all_in_one.api\\controllers\\countrycontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{92FB36F5-1534-073C-570D-C56577C8F528}|All_In_One.API\\All_In_One.API.csproj|e:\\all_in_one\\all_in_one\\all_in_one.api\\dtos\\organizationdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{92FB36F5-1534-073C-570D-C56577C8F528}|All_In_One.API\\All_In_One.API.csproj|solutionrelative:all_in_one.api\\dtos\\organizationdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{92FB36F5-1534-073C-570D-C56577C8F528}|All_In_One.API\\All_In_One.API.csproj|e:\\all_in_one\\all_in_one\\all_in_one.api\\dtos\\organizationcreatedto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{92FB36F5-1534-073C-570D-C56577C8F528}|All_In_One.API\\All_In_One.API.csproj|solutionrelative:all_in_one.api\\dtos\\organizationcreatedto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5AEA1E92-CB31-36A1-2BAA-2E078FC78485}|All_In_One.Domain\\All_In_One.Domain.csproj|e:\\all_in_one\\all_in_one\\all_in_one.domain\\entities\\tenant\\organization.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5AEA1E92-CB31-36A1-2BAA-2E078FC78485}|All_In_One.Domain\\All_In_One.Domain.csproj|solutionrelative:all_in_one.domain\\entities\\tenant\\organization.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{92FB36F5-1534-073C-570D-C56577C8F528}|All_In_One.API\\All_In_One.API.csproj|e:\\all_in_one\\all_in_one\\all_in_one.api\\controllers\\permissioncontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{92FB36F5-1534-073C-570D-C56577C8F528}|All_In_One.API\\All_In_One.API.csproj|solutionrelative:all_in_one.api\\controllers\\permissioncontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{92FB36F5-1534-073C-570D-C56577C8F528}|All_In_One.API\\All_In_One.API.csproj|e:\\all_in_one\\all_in_one\\all_in_one.api\\dtos\\permissiondto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{92FB36F5-1534-073C-570D-C56577C8F528}|All_In_One.API\\All_In_One.API.csproj|solutionrelative:all_in_one.api\\dtos\\permissiondto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{92FB36F5-1534-073C-570D-C56577C8F528}|All_In_One.API\\All_In_One.API.csproj|e:\\all_in_one\\all_in_one\\all_in_one.api\\dtos\\statedto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{92FB36F5-1534-073C-570D-C56577C8F528}|All_In_One.API\\All_In_One.API.csproj|solutionrelative:all_in_one.api\\dtos\\statedto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{92FB36F5-1534-073C-570D-C56577C8F528}|All_In_One.API\\All_In_One.API.csproj|e:\\all_in_one\\all_in_one\\all_in_one.api\\controllers\\userrolecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{92FB36F5-1534-073C-570D-C56577C8F528}|All_In_One.API\\All_In_One.API.csproj|solutionrelative:all_in_one.api\\controllers\\userrolecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{92FB36F5-1534-073C-570D-C56577C8F528}|All_In_One.API\\All_In_One.API.csproj|e:\\all_in_one\\all_in_one\\all_in_one.api\\dtos\\divisiondto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{92FB36F5-1534-073C-570D-C56577C8F528}|All_In_One.API\\All_In_One.API.csproj|solutionrelative:all_in_one.api\\dtos\\divisiondto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{92FB36F5-1534-073C-570D-C56577C8F528}|All_In_One.API\\All_In_One.API.csproj|e:\\all_in_one\\all_in_one\\all_in_one.api\\dtos\\organizationbranchdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{92FB36F5-1534-073C-570D-C56577C8F528}|All_In_One.API\\All_In_One.API.csproj|solutionrelative:all_in_one.api\\dtos\\organizationbranchdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5AEA1E92-CB31-36A1-2BAA-2E078FC78485}|All_In_One.Domain\\All_In_One.Domain.csproj|e:\\all_in_one\\all_in_one\\all_in_one.domain\\entities\\tenant\\organizationbranch.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5AEA1E92-CB31-36A1-2BAA-2E078FC78485}|All_In_One.Domain\\All_In_One.Domain.csproj|solutionrelative:all_in_one.domain\\entities\\tenant\\organizationbranch.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5AEA1E92-CB31-36A1-2BAA-2E078FC78485}|All_In_One.Domain\\All_In_One.Domain.csproj|e:\\all_in_one\\all_in_one\\all_in_one.domain\\entities\\tenant\\tenanttype.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5AEA1E92-CB31-36A1-2BAA-2E078FC78485}|All_In_One.Domain\\All_In_One.Domain.csproj|solutionrelative:all_in_one.domain\\entities\\tenant\\tenanttype.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{92FB36F5-1534-073C-570D-C56577C8F528}|All_In_One.API\\All_In_One.API.csproj|e:\\all_in_one\\all_in_one\\all_in_one.api\\dtos\\districtdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{92FB36F5-1534-073C-570D-C56577C8F528}|All_In_One.API\\All_In_One.API.csproj|solutionrelative:all_in_one.api\\dtos\\districtdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5AEA1E92-CB31-36A1-2BAA-2E078FC78485}|All_In_One.Domain\\All_In_One.Domain.csproj|e:\\all_in_one\\all_in_one\\all_in_one.domain\\entities\\geography\\division.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5AEA1E92-CB31-36A1-2BAA-2E078FC78485}|All_In_One.Domain\\All_In_One.Domain.csproj|solutionrelative:all_in_one.domain\\entities\\geography\\division.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5AEA1E92-CB31-36A1-2BAA-2E078FC78485}|All_In_One.Domain\\All_In_One.Domain.csproj|e:\\all_in_one\\all_in_one\\all_in_one.domain\\entities\\geography\\district.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5AEA1E92-CB31-36A1-2BAA-2E078FC78485}|All_In_One.Domain\\All_In_One.Domain.csproj|solutionrelative:all_in_one.domain\\entities\\geography\\district.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5AEA1E92-CB31-36A1-2BAA-2E078FC78485}|All_In_One.Domain\\All_In_One.Domain.csproj|e:\\all_in_one\\all_in_one\\all_in_one.domain\\entities\\geography\\state.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5AEA1E92-CB31-36A1-2BAA-2E078FC78485}|All_In_One.Domain\\All_In_One.Domain.csproj|solutionrelative:all_in_one.domain\\entities\\geography\\state.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5AEA1E92-CB31-36A1-2BAA-2E078FC78485}|All_In_One.Domain\\All_In_One.Domain.csproj|e:\\all_in_one\\all_in_one\\all_in_one.domain\\entities\\geography\\country.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5AEA1E92-CB31-36A1-2BAA-2E078FC78485}|All_In_One.Domain\\All_In_One.Domain.csproj|solutionrelative:all_in_one.domain\\entities\\geography\\country.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{92FB36F5-1534-073C-570D-C56577C8F528}|All_In_One.API\\All_In_One.API.csproj|e:\\all_in_one\\all_in_one\\all_in_one.api\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{92FB36F5-1534-073C-570D-C56577C8F528}|All_In_One.API\\All_In_One.API.csproj|solutionrelative:all_in_one.api\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{92FB36F5-1534-073C-570D-C56577C8F528}|All_In_One.API\\All_In_One.API.csproj|e:\\all_in_one\\all_in_one\\all_in_one.api\\dtos\\countrydto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{92FB36F5-1534-073C-570D-C56577C8F528}|All_In_One.API\\All_In_One.API.csproj|solutionrelative:all_in_one.api\\dtos\\countrydto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5AEA1E92-CB31-36A1-2BAA-2E078FC78485}|All_In_One.Domain\\All_In_One.Domain.csproj|e:\\all_in_one\\all_in_one\\all_in_one.domain\\entities\\subscription\\subscriptionplan.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5AEA1E92-CB31-36A1-2BAA-2E078FC78485}|All_In_One.Domain\\All_In_One.Domain.csproj|solutionrelative:all_in_one.domain\\entities\\subscription\\subscriptionplan.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5AEA1E92-CB31-36A1-2BAA-2E078FC78485}|All_In_One.Domain\\All_In_One.Domain.csproj|e:\\all_in_one\\all_in_one\\all_in_one.domain\\models\\loginrequest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5AEA1E92-CB31-36A1-2BAA-2E078FC78485}|All_In_One.Domain\\All_In_One.Domain.csproj|solutionrelative:all_in_one.domain\\models\\loginrequest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5AEA1E92-CB31-36A1-2BAA-2E078FC78485}|All_In_One.Domain\\All_In_One.Domain.csproj|e:\\all_in_one\\all_in_one\\all_in_one.domain\\models\\loginresponse.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5AEA1E92-CB31-36A1-2BAA-2E078FC78485}|All_In_One.Domain\\All_In_One.Domain.csproj|solutionrelative:all_in_one.domain\\models\\loginresponse.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5AEA1E92-CB31-36A1-2BAA-2E078FC78485}|All_In_One.Domain\\All_In_One.Domain.csproj|e:\\all_in_one\\all_in_one\\all_in_one.domain\\all_in_one.domain.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
+      "RelativeMoniker": "D:0:0:{5AEA1E92-CB31-36A1-2BAA-2E078FC78485}|All_In_One.Domain\\All_In_One.Domain.csproj|solutionrelative:all_in_one.domain\\all_in_one.domain.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5F3DDBDE-B116-74AF-D3C7-B3F467C9BF69}|All_In_One.Data\\All_In_One.Data.csproj|e:\\all_in_one\\all_in_one\\all_in_one.data\\migrations\\20260401185858_initialcreate.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5F3DDBDE-B116-74AF-D3C7-B3F467C9BF69}|All_In_One.Data\\All_In_One.Data.csproj|solutionrelative:all_in_one.data\\migrations\\20260401185858_initialcreate.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|E:\\All_in_One\\All_In_One\\All_In_One.Data\\Migrations\\20260401180923_InitialCreate.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:All_In_One.Data\\Migrations\\20260401180923_InitialCreate.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5AEA1E92-CB31-36A1-2BAA-2E078FC78485}|All_In_One.Domain\\All_In_One.Domain.csproj|e:\\all_in_one\\all_in_one\\all_in_one.domain\\entities\\chatbot\\chatlog.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5AEA1E92-CB31-36A1-2BAA-2E078FC78485}|All_In_One.Domain\\All_In_One.Domain.csproj|solutionrelative:all_in_one.domain\\entities\\chatbot\\chatlog.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{92FB36F5-1534-073C-570D-C56577C8F528}|All_In_One.API\\All_In_One.API.csproj|e:\\all_in_one\\all_in_one\\all_in_one.api\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{92FB36F5-1534-073C-570D-C56577C8F528}|All_In_One.API\\All_In_One.API.csproj|solutionrelative:all_in_one.api\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5AEA1E92-CB31-36A1-2BAA-2E078FC78485}|All_In_One.Domain\\All_In_One.Domain.csproj|e:\\all_in_one\\all_in_one\\all_in_one.domain\\entities\\subscription\\tenantsubscription.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5AEA1E92-CB31-36A1-2BAA-2E078FC78485}|All_In_One.Domain\\All_In_One.Domain.csproj|solutionrelative:all_in_one.domain\\entities\\subscription\\tenantsubscription.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{92FB36F5-1534-073C-570D-C56577C8F528}|All_In_One.API\\All_In_One.API.csproj|e:\\all_in_one\\all_in_one\\all_in_one.api\\all_in_one.api.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
+      "RelativeMoniker": "D:0:0:{92FB36F5-1534-073C-570D-C56577C8F528}|All_In_One.API\\All_In_One.API.csproj|solutionrelative:all_in_one.api\\all_in_one.api.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5F3DDBDE-B116-74AF-D3C7-B3F467C9BF69}|All_In_One.Data\\All_In_One.Data.csproj|e:\\all_in_one\\all_in_one\\all_in_one.data\\all_in_one.data.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
+      "RelativeMoniker": "D:0:0:{5F3DDBDE-B116-74AF-D3C7-B3F467C9BF69}|All_In_One.Data\\All_In_One.Data.csproj|solutionrelative:all_in_one.data\\all_in_one.data.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5AEA1E92-CB31-36A1-2BAA-2E078FC78485}|All_In_One.Domain\\All_In_One.Domain.csproj|e:\\all_in_one\\all_in_one\\all_in_one.domain\\common\\baseentity.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5AEA1E92-CB31-36A1-2BAA-2E078FC78485}|All_In_One.Domain\\All_In_One.Domain.csproj|solutionrelative:all_in_one.domain\\common\\baseentity.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5AEA1E92-CB31-36A1-2BAA-2E078FC78485}|All_In_One.Domain\\All_In_One.Domain.csproj|e:\\all_in_one\\all_in_one\\all_in_one.domain\\class1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5AEA1E92-CB31-36A1-2BAA-2E078FC78485}|All_In_One.Domain\\All_In_One.Domain.csproj|solutionrelative:all_in_one.domain\\class1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5F3DDBDE-B116-74AF-D3C7-B3F467C9BF69}|All_In_One.Data\\All_In_One.Data.csproj|e:\\all_in_one\\all_in_one\\all_in_one.data\\migrations\\20260428171152_secondcreate.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5F3DDBDE-B116-74AF-D3C7-B3F467C9BF69}|All_In_One.Data\\All_In_One.Data.csproj|solutionrelative:all_in_one.data\\migrations\\20260428171152_secondcreate.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5F3DDBDE-B116-74AF-D3C7-B3F467C9BF69}|All_In_One.Data\\All_In_One.Data.csproj|e:\\all_in_one\\all_in_one\\all_in_one.data\\migrations\\20260606054549_initialcreate1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5F3DDBDE-B116-74AF-D3C7-B3F467C9BF69}|All_In_One.Data\\All_In_One.Data.csproj|solutionrelative:all_in_one.data\\migrations\\20260606054549_initialcreate1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5F3DDBDE-B116-74AF-D3C7-B3F467C9BF69}|All_In_One.Data\\All_In_One.Data.csproj|e:\\all_in_one\\all_in_one\\all_in_one.data\\migrations\\20260606054009_fixsubscriptionrelations.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5F3DDBDE-B116-74AF-D3C7-B3F467C9BF69}|All_In_One.Data\\All_In_One.Data.csproj|solutionrelative:all_in_one.data\\migrations\\20260606054009_fixsubscriptionrelations.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5F3DDBDE-B116-74AF-D3C7-B3F467C9BF69}|All_In_One.Data\\All_In_One.Data.csproj|e:\\all_in_one\\all_in_one\\all_in_one.data\\migrations\\20260607083728_rbac_initial2.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5F3DDBDE-B116-74AF-D3C7-B3F467C9BF69}|All_In_One.Data\\All_In_One.Data.csproj|solutionrelative:all_in_one.data\\migrations\\20260607083728_rbac_initial2.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5F3DDBDE-B116-74AF-D3C7-B3F467C9BF69}|All_In_One.Data\\All_In_One.Data.csproj|e:\\all_in_one\\all_in_one\\all_in_one.data\\migrations\\20260607072257_rbac_initial1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5F3DDBDE-B116-74AF-D3C7-B3F467C9BF69}|All_In_One.Data\\All_In_One.Data.csproj|solutionrelative:all_in_one.data\\migrations\\20260607072257_rbac_initial1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5F3DDBDE-B116-74AF-D3C7-B3F467C9BF69}|All_In_One.Data\\All_In_One.Data.csproj|e:\\all_in_one\\all_in_one\\all_in_one.data\\migrations\\20260607061346_rbac_initial.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5F3DDBDE-B116-74AF-D3C7-B3F467C9BF69}|All_In_One.Data\\All_In_One.Data.csproj|solutionrelative:all_in_one.data\\migrations\\20260607061346_rbac_initial.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5F3DDBDE-B116-74AF-D3C7-B3F467C9BF69}|All_In_One.Data\\All_In_One.Data.csproj|e:\\all_in_one\\all_in_one\\all_in_one.data\\migrations\\20260609175225_addactionmaster1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5F3DDBDE-B116-74AF-D3C7-B3F467C9BF69}|All_In_One.Data\\All_In_One.Data.csproj|solutionrelative:all_in_one.data\\migrations\\20260609175225_addactionmaster1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5F3DDBDE-B116-74AF-D3C7-B3F467C9BF69}|All_In_One.Data\\All_In_One.Data.csproj|e:\\all_in_one\\all_in_one\\all_in_one.data\\migrations\\20260618163725_update.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5F3DDBDE-B116-74AF-D3C7-B3F467C9BF69}|All_In_One.Data\\All_In_One.Data.csproj|solutionrelative:all_in_one.data\\migrations\\20260618163725_update.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 6,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:128:0:{116d2292-e37d-41cd-a077-ebacac4c8cc4}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "ApplicationDbContext.cs",
+              "DocumentMoniker": "E:\\All_in_One\\All_In_One\\All_In_One.Data\\Context\\ApplicationDbContext.cs",
+              "RelativeDocumentMoniker": "All_In_One.Data\\Context\\ApplicationDbContext.cs",
+              "ToolTip": "E:\\All_in_One\\All_In_One\\All_In_One.Data\\Context\\ApplicationDbContext.cs",
+              "RelativeToolTip": "All_In_One.Data\\Context\\ApplicationDbContext.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-01T17:03:31.484Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "TenantTypeDto.cs",
+              "DocumentMoniker": "E:\\All_in_One\\All_In_One\\All_In_One.API\\DTOs\\TenantTypeDto.cs",
+              "RelativeDocumentMoniker": "All_In_One.API\\DTOs\\TenantTypeDto.cs",
+              "ToolTip": "E:\\All_in_One\\All_In_One\\All_In_One.API\\DTOs\\TenantTypeDto.cs",
+              "RelativeToolTip": "All_In_One.API\\DTOs\\TenantTypeDto.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABQAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-05-04T17:54:31.182Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "UserCreateDto.cs",
+              "DocumentMoniker": "E:\\All_in_One\\All_In_One\\All_In_One.API\\DTOs\\UserCreateDto.cs",
+              "RelativeDocumentMoniker": "All_In_One.API\\DTOs\\UserCreateDto.cs",
+              "ToolTip": "E:\\All_in_One\\All_In_One\\All_In_One.API\\DTOs\\UserCreateDto.cs",
+              "RelativeToolTip": "All_In_One.API\\DTOs\\UserCreateDto.cs",
+              "ViewState": "AgIAAAUAAAAAAAAAAAAQwA0AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-05-05T16:46:59.663Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "UserController.cs",
+              "DocumentMoniker": "E:\\All_in_One\\All_In_One\\All_In_One.API\\Controllers\\UserController.cs",
+              "RelativeDocumentMoniker": "All_In_One.API\\Controllers\\UserController.cs",
+              "ToolTip": "E:\\All_in_One\\All_In_One\\All_In_One.API\\Controllers\\UserController.cs",
+              "RelativeToolTip": "All_In_One.API\\Controllers\\UserController.cs",
+              "ViewState": "AgIAAN8AAAAAAAAAAAAcwPUAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-05-05T16:43:13.521Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "UserRoleDto.cs",
+              "DocumentMoniker": "E:\\All_in_One\\All_In_One\\All_In_One.API\\DTOs\\UserRoleDto.cs",
+              "RelativeDocumentMoniker": "All_In_One.API\\DTOs\\UserRoleDto.cs",
+              "ToolTip": "E:\\All_in_One\\All_In_One\\All_In_One.API\\DTOs\\UserRoleDto.cs",
+              "RelativeToolTip": "All_In_One.API\\DTOs\\UserRoleDto.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABQAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-05-05T17:07:42.07Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "OrganizationController.cs",
+              "DocumentMoniker": "E:\\All_in_One\\All_In_One\\All_In_One.API\\Controllers\\OrganizationController.cs",
+              "RelativeDocumentMoniker": "All_In_One.API\\Controllers\\OrganizationController.cs",
+              "ToolTip": "E:\\All_in_One\\All_In_One\\All_In_One.API\\Controllers\\OrganizationController.cs",
+              "RelativeToolTip": "All_In_One.API\\Controllers\\OrganizationController.cs",
+              "ViewState": "AgIAALoAAAAAAAAAAAAIwMwAAAAtAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-05-04T17:39:19.72Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "OrganizationBranchController.cs",
+              "DocumentMoniker": "E:\\All_in_One\\All_In_One\\All_In_One.API\\Controllers\\OrganizationBranchController.cs",
+              "RelativeDocumentMoniker": "All_In_One.API\\Controllers\\OrganizationBranchController.cs",
+              "ToolTip": "E:\\All_in_One\\All_In_One\\All_In_One.API\\Controllers\\OrganizationBranchController.cs",
+              "RelativeToolTip": "All_In_One.API\\Controllers\\OrganizationBranchController.cs",
+              "ViewState": "AgIAAAoAAAAAAAAAAAAowCAAAAA2AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-05-04T17:39:43.555Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "TenantTypeController.cs",
+              "DocumentMoniker": "E:\\All_in_One\\All_In_One\\All_In_One.API\\Controllers\\TenantTypeController.cs",
+              "RelativeDocumentMoniker": "All_In_One.API\\Controllers\\TenantTypeController.cs",
+              "ToolTip": "E:\\All_in_One\\All_In_One\\All_In_One.API\\Controllers\\TenantTypeController.cs",
+              "RelativeToolTip": "All_In_One.API\\Controllers\\TenantTypeController.cs",
+              "ViewState": "AgIAACEAAAAAAAAAAAAcwDwAAAA1AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-05-04T17:55:27.462Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "UserDto.cs",
+              "DocumentMoniker": "E:\\All_in_One\\All_In_One\\All_In_One.API\\DTOs\\UserDto.cs",
+              "RelativeDocumentMoniker": "All_In_One.API\\DTOs\\UserDto.cs",
+              "ToolTip": "E:\\All_in_One\\All_In_One\\All_In_One.API\\DTOs\\UserDto.cs",
+              "RelativeToolTip": "All_In_One.API\\DTOs\\UserDto.cs",
+              "ViewState": "AgIAAAwAAAAAAAAAAAAYwBoAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-05-05T16:42:39.795Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "User.cs",
+              "DocumentMoniker": "E:\\All_in_One\\All_In_One\\All_In_One.Domain\\Entities\\Security\\User.cs",
+              "RelativeDocumentMoniker": "All_In_One.Domain\\Entities\\Security\\User.cs",
+              "ToolTip": "E:\\All_in_One\\All_In_One\\All_In_One.Domain\\Entities\\Security\\User.cs",
+              "RelativeToolTip": "All_In_One.Domain\\Entities\\Security\\User.cs",
+              "ViewState": "AgIAABgAAAAAAAAAAAAIwCAAAAAHAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-01T16:53:44.944Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "20260617173825_ChangeUserRoleToDirectFK.cs",
+              "DocumentMoniker": "E:\\All_in_One\\All_In_One\\All_In_One.Data\\Migrations\\20260617173825_ChangeUserRoleToDirectFK.cs",
+              "RelativeDocumentMoniker": "All_In_One.Data\\Migrations\\20260617173825_ChangeUserRoleToDirectFK.cs",
+              "ToolTip": "E:\\All_in_One\\All_In_One\\All_In_One.Data\\Migrations\\20260617173825_ChangeUserRoleToDirectFK.cs",
+              "RelativeToolTip": "All_In_One.Data\\Migrations\\20260617173825_ChangeUserRoleToDirectFK.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-06-17T17:38:25.642Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 71,
+              "Title": "20260618163725_update.cs",
+              "DocumentMoniker": "E:\\All_in_One\\All_In_One\\All_In_One.Data\\Migrations\\20260618163725_update.cs",
+              "RelativeDocumentMoniker": "All_In_One.Data\\Migrations\\20260618163725_update.cs",
+              "ToolTip": "E:\\All_in_One\\All_In_One\\All_In_One.Data\\Migrations\\20260618163725_update.cs",
+              "RelativeToolTip": "All_In_One.Data\\Migrations\\20260618163725_update.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAoAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-06-18T16:37:25.938Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "ApplicationDbContextFactory.cs",
+              "DocumentMoniker": "E:\\All_in_One\\All_In_One\\All_In_One.Data\\Context\\ApplicationDbContextFactory.cs",
+              "RelativeDocumentMoniker": "All_In_One.Data\\Context\\ApplicationDbContextFactory.cs",
+              "ToolTip": "E:\\All_in_One\\All_In_One\\All_In_One.Data\\Context\\ApplicationDbContextFactory.cs",
+              "RelativeToolTip": "All_In_One.Data\\Context\\ApplicationDbContextFactory.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAAAvAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-01T17:51:10.72Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "Role.cs",
+              "DocumentMoniker": "E:\\All_in_One\\All_In_One\\All_In_One.Domain\\Entities\\Security\\Role.cs",
+              "RelativeDocumentMoniker": "All_In_One.Domain\\Entities\\Security\\Role.cs",
+              "ToolTip": "E:\\All_in_One\\All_In_One\\All_In_One.Domain\\Entities\\Security\\Role.cs",
+              "RelativeToolTip": "All_In_One.Domain\\Entities\\Security\\Role.cs",
+              "ViewState": "AgIAAAQAAAAAAAAAAAAowBIAAAAIAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-01T16:54:18.877Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "20260611174816_AddRoleDescription.cs",
+              "DocumentMoniker": "E:\\All_in_One\\All_In_One\\All_In_One.Data\\Migrations\\20260611174816_AddRoleDescription.cs",
+              "RelativeDocumentMoniker": "All_In_One.Data\\Migrations\\20260611174816_AddRoleDescription.cs",
+              "ToolTip": "E:\\All_in_One\\All_In_One\\All_In_One.Data\\Migrations\\20260611174816_AddRoleDescription.cs",
+              "RelativeToolTip": "All_In_One.Data\\Migrations\\20260611174816_AddRoleDescription.cs",
+              "ViewState": "AgIAABkAAAAAAAAAAAAQwAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-06-11T17:48:17.065Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
+              "Title": "RoleController.cs",
+              "DocumentMoniker": "E:\\All_in_One\\All_In_One\\All_In_One.API\\Controllers\\RoleController.cs",
+              "RelativeDocumentMoniker": "All_In_One.API\\Controllers\\RoleController.cs",
+              "ToolTip": "E:\\All_in_One\\All_In_One\\All_In_One.API\\Controllers\\RoleController.cs",
+              "RelativeToolTip": "All_In_One.API\\Controllers\\RoleController.cs",
+              "ViewState": "AgIAAIAAAAAAAAAAAAA2wJYAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-05-05T17:22:26.732Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 15,
+              "Title": "RoleDto.cs",
+              "DocumentMoniker": "E:\\All_in_One\\All_In_One\\All_In_One.API\\DTOs\\RoleDto.cs",
+              "RelativeDocumentMoniker": "All_In_One.API\\DTOs\\RoleDto.cs",
+              "ToolTip": "E:\\All_in_One\\All_In_One\\All_In_One.API\\DTOs\\RoleDto.cs",
+              "RelativeToolTip": "All_In_One.API\\DTOs\\RoleDto.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAAxAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-05-05T17:21:55.273Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 17,
+              "Title": "Actions.cs",
+              "DocumentMoniker": "E:\\All_in_One\\All_In_One\\All_In_One.Domain\\Entities\\Security\\Actions.cs",
+              "RelativeDocumentMoniker": "All_In_One.Domain\\Entities\\Security\\Actions.cs",
+              "ToolTip": "E:\\All_in_One\\All_In_One\\All_In_One.Domain\\Entities\\Security\\Actions.cs",
+              "RelativeToolTip": "All_In_One.Domain\\Entities\\Security\\Actions.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAAgAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-06-09T16:35:46.524Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 16,
+              "Title": "ActionDto.cs",
+              "DocumentMoniker": "E:\\All_in_One\\All_In_One\\All_In_One.API\\DTOs\\ActionDto.cs",
+              "RelativeDocumentMoniker": "All_In_One.API\\DTOs\\ActionDto.cs",
+              "ToolTip": "E:\\All_in_One\\All_In_One\\All_In_One.API\\DTOs\\ActionDto.cs",
+              "RelativeToolTip": "All_In_One.API\\DTOs\\ActionDto.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAApAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-06-09T16:38:22.686Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 19,
+              "Title": "ActionController.cs",
+              "DocumentMoniker": "E:\\All_in_One\\All_In_One\\All_In_One.API\\Controllers\\ActionController.cs",
+              "RelativeDocumentMoniker": "All_In_One.API\\Controllers\\ActionController.cs",
+              "ToolTip": "E:\\All_in_One\\All_In_One\\All_In_One.API\\Controllers\\ActionController.cs",
+              "RelativeToolTip": "All_In_One.API\\Controllers\\ActionController.cs",
+              "ViewState": "AgIAAIcAAAAAAAAAAAAiwJgAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-06-09T16:39:10.435Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 18,
+              "Title": "ActionRole.cs",
+              "DocumentMoniker": "E:\\All_in_One\\All_In_One\\All_In_One.Domain\\Entities\\Security\\ActionRole.cs",
+              "RelativeDocumentMoniker": "All_In_One.Domain\\Entities\\Security\\ActionRole.cs",
+              "ToolTip": "E:\\All_in_One\\All_In_One\\All_In_One.Domain\\Entities\\Security\\ActionRole.cs",
+              "RelativeToolTip": "All_In_One.Domain\\Entities\\Security\\ActionRole.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-06-09T17:48:30.452Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 20,
+              "Title": "UserPermission.cs",
+              "DocumentMoniker": "E:\\All_in_One\\All_In_One\\All_In_One.Domain\\Entities\\Security\\UserPermission.cs",
+              "RelativeDocumentMoniker": "All_In_One.Domain\\Entities\\Security\\UserPermission.cs",
+              "ToolTip": "E:\\All_in_One\\All_In_One\\All_In_One.Domain\\Entities\\Security\\UserPermission.cs",
+              "RelativeToolTip": "All_In_One.Domain\\Entities\\Security\\UserPermission.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-06-07T08:33:55.601Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 70,
+              "Title": "20260609175225_AddActionMaster1.cs",
+              "DocumentMoniker": "E:\\All_in_One\\All_In_One\\All_In_One.Data\\Migrations\\20260609175225_AddActionMaster1.cs",
+              "RelativeDocumentMoniker": "All_In_One.Data\\Migrations\\20260609175225_AddActionMaster1.cs",
+              "ToolTip": "E:\\All_in_One\\All_In_One\\All_In_One.Data\\Migrations\\20260609175225_AddActionMaster1.cs",
+              "RelativeToolTip": "All_In_One.Data\\Migrations\\20260609175225_AddActionMaster1.cs",
+              "ViewState": "AgIAAAsAAAAAAAAAAAAAwAsAAABFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-06-09T17:52:25.49Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 67,
+              "Title": "20260607083728_RBAC_Initial2.cs",
+              "DocumentMoniker": "E:\\All_in_One\\All_In_One\\All_In_One.Data\\Migrations\\20260607083728_RBAC_Initial2.cs",
+              "RelativeDocumentMoniker": "All_In_One.Data\\Migrations\\20260607083728_RBAC_Initial2.cs",
+              "ToolTip": "E:\\All_in_One\\All_In_One\\All_In_One.Data\\Migrations\\20260607083728_RBAC_Initial2.cs",
+              "RelativeToolTip": "All_In_One.Data\\Migrations\\20260607083728_RBAC_Initial2.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-06-07T08:37:28.665Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 23,
+              "Title": "DivisionController.cs",
+              "DocumentMoniker": "E:\\All_in_One\\All_In_One\\All_In_One.API\\Controllers\\DivisionController.cs",
+              "RelativeDocumentMoniker": "All_In_One.API\\Controllers\\DivisionController.cs",
+              "ToolTip": "E:\\All_in_One\\All_In_One\\All_In_One.API\\Controllers\\DivisionController.cs",
+              "RelativeToolTip": "All_In_One.API\\Controllers\\DivisionController.cs",
+              "ViewState": "AgIAABAAAAAAAAAAAAAYwBgAAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-28T18:11:06.346Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 21,
+              "Title": "AuthController.cs",
+              "DocumentMoniker": "E:\\All_in_One\\All_In_One\\All_In_One.API\\Controllers\\AuthController.cs",
+              "RelativeDocumentMoniker": "All_In_One.API\\Controllers\\AuthController.cs",
+              "ToolTip": "E:\\All_in_One\\All_In_One\\All_In_One.API\\Controllers\\AuthController.cs",
+              "RelativeToolTip": "All_In_One.API\\Controllers\\AuthController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAawAwAAAAIAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-08T17:08:07.573Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 24,
+              "Title": "RolePermission.cs",
+              "DocumentMoniker": "E:\\All_in_One\\All_In_One\\All_In_One.Domain\\Entities\\Security\\RolePermission.cs",
+              "RelativeDocumentMoniker": "All_In_One.Domain\\Entities\\Security\\RolePermission.cs",
+              "ToolTip": "E:\\All_in_One\\All_In_One\\All_In_One.Domain\\Entities\\Security\\RolePermission.cs",
+              "RelativeToolTip": "All_In_One.Domain\\Entities\\Security\\RolePermission.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-01T16:59:01.037Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 22,
+              "Title": "StateController.cs",
+              "DocumentMoniker": "E:\\All_in_One\\All_In_One\\All_In_One.API\\Controllers\\StateController.cs",
+              "RelativeDocumentMoniker": "All_In_One.API\\Controllers\\StateController.cs",
+              "ToolTip": "E:\\All_in_One\\All_In_One\\All_In_One.API\\Controllers\\StateController.cs",
+              "RelativeToolTip": "All_In_One.API\\Controllers\\StateController.cs",
+              "ViewState": "AgIAADIAAAAAAAAAAAAUwHUAAAAsAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-28T17:22:55.568Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 68,
+              "Title": "20260607072257_RBAC_Initial1.cs",
+              "DocumentMoniker": "E:\\All_in_One\\All_In_One\\All_In_One.Data\\Migrations\\20260607072257_RBAC_Initial1.cs",
+              "RelativeDocumentMoniker": "All_In_One.Data\\Migrations\\20260607072257_RBAC_Initial1.cs",
+              "ToolTip": "E:\\All_in_One\\All_In_One\\All_In_One.Data\\Migrations\\20260607072257_RBAC_Initial1.cs",
+              "RelativeToolTip": "All_In_One.Data\\Migrations\\20260607072257_RBAC_Initial1.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-06-07T07:22:57.855Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 26,
+              "Title": "Permission.cs",
+              "DocumentMoniker": "E:\\All_in_One\\All_In_One\\All_In_One.Domain\\Entities\\Security\\Permission.cs",
+              "RelativeDocumentMoniker": "All_In_One.Domain\\Entities\\Security\\Permission.cs",
+              "ToolTip": "E:\\All_in_One\\All_In_One\\All_In_One.Domain\\Entities\\Security\\Permission.cs",
+              "RelativeToolTip": "All_In_One.Domain\\Entities\\Security\\Permission.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-01T16:55:32.479Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 69,
+              "Title": "20260607061346_RBAC_Initial.cs",
+              "DocumentMoniker": "E:\\All_in_One\\All_In_One\\All_In_One.Data\\Migrations\\20260607061346_RBAC_Initial.cs",
+              "RelativeDocumentMoniker": "All_In_One.Data\\Migrations\\20260607061346_RBAC_Initial.cs",
+              "ToolTip": "E:\\All_in_One\\All_In_One\\All_In_One.Data\\Migrations\\20260607061346_RBAC_Initial.cs",
+              "RelativeToolTip": "All_In_One.Data\\Migrations\\20260607061346_RBAC_Initial.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-06-07T06:13:46.702Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 25,
+              "Title": "UserRole.cs",
+              "DocumentMoniker": "E:\\All_in_One\\All_In_One\\All_In_One.Domain\\Entities\\Security\\UserRole.cs",
+              "RelativeDocumentMoniker": "All_In_One.Domain\\Entities\\Security\\UserRole.cs",
+              "ToolTip": "E:\\All_in_One\\All_In_One\\All_In_One.Domain\\Entities\\Security\\UserRole.cs",
+              "RelativeToolTip": "All_In_One.Domain\\Entities\\Security\\UserRole.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAmAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-01T16:56:13.657Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 27,
+              "Title": "DistrictController.cs",
+              "DocumentMoniker": "E:\\All_in_One\\All_In_One\\All_In_One.API\\Controllers\\DistrictController.cs",
+              "RelativeDocumentMoniker": "All_In_One.API\\Controllers\\DistrictController.cs",
+              "ToolTip": "E:\\All_in_One\\All_In_One\\All_In_One.API\\Controllers\\DistrictController.cs",
+              "RelativeToolTip": "All_In_One.API\\Controllers\\DistrictController.cs",
+              "ViewState": "AgIAAGsAAAAAAAAAAAAawHIAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-28T17:15:51.242Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 28,
+              "Title": "ChatCommand.cs",
+              "DocumentMoniker": "E:\\All_in_One\\All_In_One\\All_In_One.Domain\\Entities\\Chatbot\\ChatCommand.cs",
+              "RelativeDocumentMoniker": "All_In_One.Domain\\Entities\\Chatbot\\ChatCommand.cs",
+              "ToolTip": "E:\\All_in_One\\All_In_One\\All_In_One.Domain\\Entities\\Chatbot\\ChatCommand.cs",
+              "RelativeToolTip": "All_In_One.Domain\\Entities\\Chatbot\\ChatCommand.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAWAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-01T16:59:40.641Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 31,
+              "Title": "UserType.cs",
+              "DocumentMoniker": "E:\\All_in_One\\All_In_One\\All_In_One.Domain\\Entities\\Security\\UserType.cs",
+              "RelativeDocumentMoniker": "All_In_One.Domain\\Entities\\Security\\UserType.cs",
+              "ToolTip": "E:\\All_in_One\\All_In_One\\All_In_One.Domain\\Entities\\Security\\UserType.cs",
+              "RelativeToolTip": "All_In_One.Domain\\Entities\\Security\\UserType.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAeAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-01T16:52:24.706Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 30,
+              "Title": "UserTypeDto.cs",
+              "DocumentMoniker": "E:\\All_in_One\\All_In_One\\All_In_One.API\\DTOs\\UserTypeDto.cs",
+              "RelativeDocumentMoniker": "All_In_One.API\\DTOs\\UserTypeDto.cs",
+              "ToolTip": "E:\\All_in_One\\All_In_One\\All_In_One.API\\DTOs\\UserTypeDto.cs",
+              "RelativeToolTip": "All_In_One.API\\DTOs\\UserTypeDto.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAUAAAAiAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-06-06T07:05:17.974Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 29,
+              "Title": "UserTypeController.cs",
+              "DocumentMoniker": "E:\\All_in_One\\All_In_One\\All_In_One.API\\Controllers\\UserTypeController.cs",
+              "RelativeDocumentMoniker": "All_In_One.API\\Controllers\\UserTypeController.cs",
+              "ToolTip": "E:\\All_in_One\\All_In_One\\All_In_One.API\\Controllers\\UserTypeController.cs",
+              "RelativeToolTip": "All_In_One.API\\Controllers\\UserTypeController.cs",
+              "ViewState": "AgIAAAMAAAAAAAAAAAAAAA4AAAA/AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-06-06T07:06:04.466Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 32,
+              "Title": "CountryController.cs",
+              "DocumentMoniker": "E:\\All_in_One\\All_In_One\\All_In_One.API\\Controllers\\CountryController.cs",
+              "RelativeDocumentMoniker": "All_In_One.API\\Controllers\\CountryController.cs",
+              "ToolTip": "E:\\All_in_One\\All_In_One\\All_In_One.API\\Controllers\\CountryController.cs",
+              "RelativeToolTip": "All_In_One.API\\Controllers\\CountryController.cs",
+              "ViewState": "AgIAADQAAAAAAAAAAAAiwFEAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-16T17:56:28.368Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 65,
+              "Title": "20260606054549_InitialCreate1.cs",
+              "DocumentMoniker": "E:\\All_in_One\\All_In_One\\All_In_One.Data\\Migrations\\20260606054549_InitialCreate1.cs",
+              "RelativeDocumentMoniker": "All_In_One.Data\\Migrations\\20260606054549_InitialCreate1.cs",
+              "ToolTip": "E:\\All_in_One\\All_In_One\\All_In_One.Data\\Migrations\\20260606054549_InitialCreate1.cs",
+              "RelativeToolTip": "All_In_One.Data\\Migrations\\20260606054549_InitialCreate1.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAaAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-06-06T05:45:49.819Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 66,
+              "Title": "20260606054009_FixSubscriptionRelations.cs",
+              "DocumentMoniker": "E:\\All_in_One\\All_In_One\\All_In_One.Data\\Migrations\\20260606054009_FixSubscriptionRelations.cs",
+              "RelativeDocumentMoniker": "All_In_One.Data\\Migrations\\20260606054009_FixSubscriptionRelations.cs",
+              "ToolTip": "E:\\All_in_One\\All_In_One\\All_In_One.Data\\Migrations\\20260606054009_FixSubscriptionRelations.cs",
+              "RelativeToolTip": "All_In_One.Data\\Migrations\\20260606054009_FixSubscriptionRelations.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-06-06T05:40:09.414Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 35,
+              "Title": "Organization.cs",
+              "DocumentMoniker": "E:\\All_in_One\\All_In_One\\All_In_One.Domain\\Entities\\Tenant\\Organization.cs",
+              "RelativeDocumentMoniker": "All_In_One.Domain\\Entities\\Tenant\\Organization.cs",
+              "ToolTip": "E:\\All_in_One\\All_In_One\\All_In_One.Domain\\Entities\\Tenant\\Organization.cs",
+              "RelativeToolTip": "All_In_One.Domain\\Entities\\Tenant\\Organization.cs",
+              "ViewState": "AgIAAAYAAAAAAAAAAAAiwAwAAAA0AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-01T16:50:24.283Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 36,
+              "Title": "PermissionController.cs",
+              "DocumentMoniker": "E:\\All_in_One\\All_In_One\\All_In_One.API\\Controllers\\PermissionController.cs",
+              "RelativeDocumentMoniker": "All_In_One.API\\Controllers\\PermissionController.cs",
+              "ToolTip": "E:\\All_in_One\\All_In_One\\All_In_One.API\\Controllers\\PermissionController.cs",
+              "RelativeToolTip": "All_In_One.API\\Controllers\\PermissionController.cs",
+              "ViewState": "AgIAAEAAAAAAAAAAAAAkwBcAAAA4AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-06-04T16:54:33.537Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 33,
+              "Title": "OrganizationDto.cs",
+              "DocumentMoniker": "E:\\All_in_One\\All_In_One\\All_In_One.API\\DTOs\\OrganizationDto.cs",
+              "RelativeDocumentMoniker": "All_In_One.API\\DTOs\\OrganizationDto.cs",
+              "ToolTip": "E:\\All_in_One\\All_In_One\\All_In_One.API\\DTOs\\OrganizationDto.cs",
+              "RelativeToolTip": "All_In_One.API\\DTOs\\OrganizationDto.cs",
+              "ViewState": "AgIAAAYAAAAAAAAAAAAywCIAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-05-04T17:38:22.688Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 34,
+              "Title": "OrganizationCreateDto.cs",
+              "DocumentMoniker": "E:\\All_in_One\\All_In_One\\All_In_One.API\\DTOs\\OrganizationCreateDto.cs",
+              "RelativeDocumentMoniker": "All_In_One.API\\DTOs\\OrganizationCreateDto.cs",
+              "ToolTip": "E:\\All_in_One\\All_In_One\\All_In_One.API\\DTOs\\OrganizationCreateDto.cs",
+              "RelativeToolTip": "All_In_One.API\\DTOs\\OrganizationCreateDto.cs",
+              "ViewState": "AgIAAAMAAAAAAAAAAAAuwA8AAABGAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-05-04T18:23:05.967Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 38,
+              "Title": "StateDto.cs",
+              "DocumentMoniker": "E:\\All_in_One\\All_In_One\\All_In_One.API\\DTOs\\StateDto.cs",
+              "RelativeDocumentMoniker": "All_In_One.API\\DTOs\\StateDto.cs",
+              "ToolTip": "E:\\All_in_One\\All_In_One\\All_In_One.API\\DTOs\\StateDto.cs",
+              "RelativeToolTip": "All_In_One.API\\DTOs\\StateDto.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAAWAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-28T17:22:30.906Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 37,
+              "Title": "PermissionDto.cs",
+              "DocumentMoniker": "E:\\All_in_One\\All_In_One\\All_In_One.API\\DTOs\\PermissionDto.cs",
+              "RelativeDocumentMoniker": "All_In_One.API\\DTOs\\PermissionDto.cs",
+              "ToolTip": "E:\\All_in_One\\All_In_One\\All_In_One.API\\DTOs\\PermissionDto.cs",
+              "RelativeToolTip": "All_In_One.API\\DTOs\\PermissionDto.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-06-04T16:54:07.126Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 39,
+              "Title": "UserRoleController.cs",
+              "DocumentMoniker": "E:\\All_in_One\\All_In_One\\All_In_One.API\\Controllers\\UserRoleController.cs",
+              "RelativeDocumentMoniker": "All_In_One.API\\Controllers\\UserRoleController.cs",
+              "ToolTip": "E:\\All_in_One\\All_In_One\\All_In_One.API\\Controllers\\UserRoleController.cs",
+              "RelativeToolTip": "All_In_One.API\\Controllers\\UserRoleController.cs",
+              "ViewState": "AgIAAGUAAAAAAAAAAAAwwGgAAAAuAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-05-05T17:08:17.41Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 41,
+              "Title": "OrganizationBranchDto.cs",
+              "DocumentMoniker": "E:\\All_in_One\\All_In_One\\All_In_One.API\\DTOs\\OrganizationBranchDto.cs",
+              "RelativeDocumentMoniker": "All_In_One.API\\DTOs\\OrganizationBranchDto.cs",
+              "ToolTip": "E:\\All_in_One\\All_In_One\\All_In_One.API\\DTOs\\OrganizationBranchDto.cs",
+              "RelativeToolTip": "All_In_One.API\\DTOs\\OrganizationBranchDto.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABoAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-05-04T17:38:45.434Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 40,
+              "Title": "DivisionDto.cs",
+              "DocumentMoniker": "E:\\All_in_One\\All_In_One\\All_In_One.API\\DTOs\\DivisionDto.cs",
+              "RelativeDocumentMoniker": "All_In_One.API\\DTOs\\DivisionDto.cs",
+              "ToolTip": "E:\\All_in_One\\All_In_One\\All_In_One.API\\DTOs\\DivisionDto.cs",
+              "RelativeToolTip": "All_In_One.API\\DTOs\\DivisionDto.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAAAWAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-28T18:10:42.56Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 46,
+              "Title": "District.cs",
+              "DocumentMoniker": "E:\\All_in_One\\All_In_One\\All_In_One.Domain\\Entities\\Geography\\District.cs",
+              "RelativeDocumentMoniker": "All_In_One.Domain\\Entities\\Geography\\District.cs",
+              "ToolTip": "E:\\All_in_One\\All_In_One\\All_In_One.Domain\\Entities\\Geography\\District.cs",
+              "RelativeToolTip": "All_In_One.Domain\\Entities\\Geography\\District.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABUAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-01T16:48:20.29Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 43,
+              "Title": "TenantType.cs",
+              "DocumentMoniker": "E:\\All_in_One\\All_In_One\\All_In_One.Domain\\Entities\\Tenant\\TenantType.cs",
+              "RelativeDocumentMoniker": "All_In_One.Domain\\Entities\\Tenant\\TenantType.cs",
+              "ToolTip": "E:\\All_in_One\\All_In_One\\All_In_One.Domain\\Entities\\Tenant\\TenantType.cs",
+              "RelativeToolTip": "All_In_One.Domain\\Entities\\Tenant\\TenantType.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-01T16:49:44.065Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 42,
+              "Title": "OrganizationBranch.cs",
+              "DocumentMoniker": "E:\\All_in_One\\All_In_One\\All_In_One.Domain\\Entities\\Tenant\\OrganizationBranch.cs",
+              "RelativeDocumentMoniker": "All_In_One.Domain\\Entities\\Tenant\\OrganizationBranch.cs",
+              "ToolTip": "E:\\All_in_One\\All_In_One\\All_In_One.Domain\\Entities\\Tenant\\OrganizationBranch.cs",
+              "RelativeToolTip": "All_In_One.Domain\\Entities\\Tenant\\OrganizationBranch.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABUAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-01T16:51:09.934Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 44,
+              "Title": "DistrictDto.cs",
+              "DocumentMoniker": "E:\\All_in_One\\All_In_One\\All_In_One.API\\DTOs\\DistrictDto.cs",
+              "RelativeDocumentMoniker": "All_In_One.API\\DTOs\\DistrictDto.cs",
+              "ToolTip": "E:\\All_in_One\\All_In_One\\All_In_One.API\\DTOs\\DistrictDto.cs",
+              "RelativeToolTip": "All_In_One.API\\DTOs\\DistrictDto.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABAAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-28T17:14:40.665Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 49,
+              "Title": "Program.cs",
+              "DocumentMoniker": "E:\\All_in_One\\All_In_One\\All_In_One.API\\Program.cs",
+              "RelativeDocumentMoniker": "All_In_One.API\\Program.cs",
+              "ToolTip": "E:\\All_in_One\\All_In_One\\All_In_One.API\\Program.cs",
+              "RelativeToolTip": "All_In_One.API\\Program.cs",
+              "ViewState": "AgIAAAYAAAAAAAAAAIBJwCkAAAAXAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-01T17:12:37.397Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 48,
+              "Title": "Country.cs",
+              "DocumentMoniker": "E:\\All_in_One\\All_In_One\\All_In_One.Domain\\Entities\\Geography\\Country.cs",
+              "RelativeDocumentMoniker": "All_In_One.Domain\\Entities\\Geography\\Country.cs",
+              "ToolTip": "E:\\All_in_One\\All_In_One\\All_In_One.Domain\\Entities\\Geography\\Country.cs",
+              "RelativeToolTip": "All_In_One.Domain\\Entities\\Geography\\Country.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAvAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-01T16:46:26.939Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 47,
+              "Title": "State.cs",
+              "DocumentMoniker": "E:\\All_in_One\\All_In_One\\All_In_One.Domain\\Entities\\Geography\\State.cs",
+              "RelativeDocumentMoniker": "All_In_One.Domain\\Entities\\Geography\\State.cs",
+              "ToolTip": "E:\\All_in_One\\All_In_One\\All_In_One.Domain\\Entities\\Geography\\State.cs",
+              "RelativeToolTip": "All_In_One.Domain\\Entities\\Geography\\State.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-01T16:47:37.56Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 45,
+              "Title": "Division.cs",
+              "DocumentMoniker": "E:\\All_in_One\\All_In_One\\All_In_One.Domain\\Entities\\Geography\\Division.cs",
+              "RelativeDocumentMoniker": "All_In_One.Domain\\Entities\\Geography\\Division.cs",
+              "ToolTip": "E:\\All_in_One\\All_In_One\\All_In_One.Domain\\Entities\\Geography\\Division.cs",
+              "RelativeToolTip": "All_In_One.Domain\\Entities\\Geography\\Division.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-01T16:49:02.707Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 64,
+              "Title": "20260428171152_secondCreate.cs",
+              "DocumentMoniker": "E:\\All_in_One\\All_In_One\\All_In_One.Data\\Migrations\\20260428171152_secondCreate.cs",
+              "RelativeDocumentMoniker": "All_In_One.Data\\Migrations\\20260428171152_secondCreate.cs",
+              "ToolTip": "E:\\All_in_One\\All_In_One\\All_In_One.Data\\Migrations\\20260428171152_secondCreate.cs",
+              "RelativeToolTip": "All_In_One.Data\\Migrations\\20260428171152_secondCreate.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-28T17:11:52.687Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 51,
+              "Title": "SubscriptionPlan.cs",
+              "DocumentMoniker": "E:\\All_in_One\\All_In_One\\All_In_One.Domain\\Entities\\Subscription\\SubscriptionPlan.cs",
+              "RelativeDocumentMoniker": "All_In_One.Domain\\Entities\\Subscription\\SubscriptionPlan.cs",
+              "ToolTip": "E:\\All_in_One\\All_In_One\\All_In_One.Domain\\Entities\\Subscription\\SubscriptionPlan.cs",
+              "RelativeToolTip": "All_In_One.Domain\\Entities\\Subscription\\SubscriptionPlan.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABMAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-01T17:01:33.26Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 50,
+              "Title": "CountryDto.cs",
+              "DocumentMoniker": "E:\\All_in_One\\All_In_One\\All_In_One.API\\DTOs\\CountryDto.cs",
+              "RelativeDocumentMoniker": "All_In_One.API\\DTOs\\CountryDto.cs",
+              "ToolTip": "E:\\All_in_One\\All_In_One\\All_In_One.API\\DTOs\\CountryDto.cs",
+              "RelativeToolTip": "All_In_One.API\\DTOs\\CountryDto.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-16T17:51:55.839Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 52,
+              "Title": "LoginRequest.cs",
+              "DocumentMoniker": "E:\\All_in_One\\All_In_One\\All_In_One.Domain\\Models\\LoginRequest.cs",
+              "RelativeDocumentMoniker": "All_In_One.Domain\\Models\\LoginRequest.cs",
+              "ToolTip": "E:\\All_in_One\\All_In_One\\All_In_One.Domain\\Models\\LoginRequest.cs",
+              "RelativeToolTip": "All_In_One.Domain\\Models\\LoginRequest.cs",
+              "ViewState": "AgIAAAEAAAAAAAAAAAAvwAoAAAAWAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-05T16:55:27.9Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 54,
+              "Title": "All_In_One.Domain.csproj",
+              "DocumentMoniker": "E:\\All_in_One\\All_In_One\\All_In_One.Domain\\All_In_One.Domain.csproj",
+              "RelativeDocumentMoniker": "All_In_One.Domain\\All_In_One.Domain.csproj",
+              "ToolTip": "E:\\All_in_One\\All_In_One\\All_In_One.Domain\\All_In_One.Domain.csproj",
+              "RelativeToolTip": "All_In_One.Domain\\All_In_One.Domain.csproj",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2026-04-05T16:55:10.882Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 53,
+              "Title": "LoginResponse.cs",
+              "DocumentMoniker": "E:\\All_in_One\\All_In_One\\All_In_One.Domain\\Models\\LoginResponse.cs",
+              "RelativeDocumentMoniker": "All_In_One.Domain\\Models\\LoginResponse.cs",
+              "ToolTip": "E:\\All_in_One\\All_In_One\\All_In_One.Domain\\Models\\LoginResponse.cs",
+              "RelativeToolTip": "All_In_One.Domain\\Models\\LoginResponse.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAhAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-05T17:03:16.228Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 57,
+              "Title": "ChatLog.cs",
+              "DocumentMoniker": "E:\\All_in_One\\All_In_One\\All_In_One.Domain\\Entities\\Chatbot\\ChatLog.cs",
+              "RelativeDocumentMoniker": "All_In_One.Domain\\Entities\\Chatbot\\ChatLog.cs",
+              "ToolTip": "E:\\All_in_One\\All_In_One\\All_In_One.Domain\\Entities\\Chatbot\\ChatLog.cs",
+              "RelativeToolTip": "All_In_One.Domain\\Entities\\Chatbot\\ChatLog.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABEAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-01T17:00:12.938Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 55,
+              "Title": "20260401185858_InitialCreate.cs",
+              "DocumentMoniker": "E:\\All_in_One\\All_In_One\\All_In_One.Data\\Migrations\\20260401185858_InitialCreate.cs",
+              "RelativeDocumentMoniker": "All_In_One.Data\\Migrations\\20260401185858_InitialCreate.cs",
+              "ToolTip": "E:\\All_in_One\\All_In_One\\All_In_One.Data\\Migrations\\20260401185858_InitialCreate.cs",
+              "RelativeToolTip": "All_In_One.Data\\Migrations\\20260401185858_InitialCreate.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-01T18:58:58.723Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 58,
+              "Title": "appsettings.json",
+              "DocumentMoniker": "E:\\All_in_One\\All_In_One\\All_In_One.API\\appsettings.json",
+              "RelativeDocumentMoniker": "All_In_One.API\\appsettings.json",
+              "ToolTip": "E:\\All_in_One\\All_In_One\\All_In_One.API\\appsettings.json",
+              "RelativeToolTip": "All_In_One.API\\appsettings.json",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2026-04-01T17:11:59.904Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 56,
+              "Title": "20260401180923_InitialCreate.cs",
+              "DocumentMoniker": "E:\\All_in_One\\All_In_One\\All_In_One.Data\\Migrations\\20260401180923_InitialCreate.cs",
+              "RelativeDocumentMoniker": "All_In_One.Data\\Migrations\\20260401180923_InitialCreate.cs",
+              "ToolTip": "E:\\All_in_One\\All_In_One\\All_In_One.Data\\Migrations\\20260401180923_InitialCreate.cs",
+              "RelativeToolTip": "All_In_One.Data\\Migrations\\20260401180923_InitialCreate.cs",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-01T18:09:23.901Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 59,
+              "Title": "TenantSubscription.cs",
+              "DocumentMoniker": "E:\\All_in_One\\All_In_One\\All_In_One.Domain\\Entities\\Subscription\\TenantSubscription.cs",
+              "RelativeDocumentMoniker": "All_In_One.Domain\\Entities\\Subscription\\TenantSubscription.cs",
+              "ToolTip": "E:\\All_in_One\\All_In_One\\All_In_One.Domain\\Entities\\Subscription\\TenantSubscription.cs",
+              "RelativeToolTip": "All_In_One.Domain\\Entities\\Subscription\\TenantSubscription.cs",
+              "ViewState": "AgIAAAUAAAAAAAAAAIBJwBYAAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-01T17:02:11.899Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 60,
+              "Title": "All_In_One.API.csproj",
+              "DocumentMoniker": "E:\\All_in_One\\All_In_One\\All_In_One.API\\All_In_One.API.csproj",
+              "RelativeDocumentMoniker": "All_In_One.API\\All_In_One.API.csproj",
+              "ToolTip": "E:\\All_in_One\\All_In_One\\All_In_One.API\\All_In_One.API.csproj",
+              "RelativeToolTip": "All_In_One.API\\All_In_One.API.csproj",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2026-04-01T17:50:13.298Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 61,
+              "Title": "All_In_One.Data.csproj",
+              "DocumentMoniker": "E:\\All_in_One\\All_In_One\\All_In_One.Data\\All_In_One.Data.csproj",
+              "RelativeDocumentMoniker": "All_In_One.Data\\All_In_One.Data.csproj",
+              "ToolTip": "E:\\All_in_One\\All_In_One\\All_In_One.Data\\All_In_One.Data.csproj",
+              "RelativeToolTip": "All_In_One.Data\\All_In_One.Data.csproj",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2026-04-01T17:50:00.533Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 62,
+              "Title": "BaseEntity.cs",
+              "DocumentMoniker": "E:\\All_in_One\\All_In_One\\All_In_One.Domain\\Common\\BaseEntity.cs",
+              "RelativeDocumentMoniker": "All_In_One.Domain\\Common\\BaseEntity.cs",
+              "ToolTip": "E:\\All_in_One\\All_In_One\\All_In_One.Domain\\Common\\BaseEntity.cs",
+              "RelativeToolTip": "All_In_One.Domain\\Common\\BaseEntity.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-01T16:45:35.093Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 63,
+              "Title": "Class1.cs",
+              "DocumentMoniker": "E:\\All_in_One\\All_In_One\\All_In_One.Domain\\Class1.cs",
+              "RelativeDocumentMoniker": "All_In_One.Domain\\Class1.cs",
+              "ToolTip": "E:\\All_in_One\\All_In_One\\All_In_One.Domain\\Class1.cs",
+              "RelativeToolTip": "All_In_One.Domain\\Class1.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-01T16:26:18.127Z"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

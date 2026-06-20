@@ -1,0 +1,116 @@
+<div class="country-page">
+  <div class="country-container">
+
+    <!-- FORM -->
+    <div class="form-card">
+      <div class="form-header">
+        <h2>{{ isEditMode ? 'Edit District' : 'Create District' }}</h2>
+      </div>
+
+      <form [formGroup]="districtForm" (ngSubmit)="onSubmit()" class="country-form">
+        <div class="form-grid">
+
+          <!-- STATE DROPDOWN -->
+          <!-- STATE DROPDOWN -->
+          <div class="form-group">
+            <label>State</label>
+
+            <div class="custom-select-wrapper">
+
+              <!-- SELECT BOX -->
+              <div class="custom-select-box" (click)="toggleDropdown()">
+                <span class="selected-text">
+                  {{ selectedStateName || 'Select State' }}
+                </span>
+
+                <span class="arrow" [class.rotate]="isDropdownOpen">
+                  ▾
+                </span>
+              </div>
+
+              <!-- DROPDOWN -->
+              <div class="custom-dropdown" *ngIf="isDropdownOpen">
+                <div *ngIf="states.length === 0" class="dropdown-item no-records">
+                  No records found
+                  </div>
+                  <div class="dropdown-item" *ngFor="let s of states" (click)="selectState(s)">
+                    {{ s.stateName }}
+                  </div>
+
+                </div>
+
+              </div>
+
+              <!-- <small *ngIf="hasError('stateId')" class="error">
+                State is required
+              </small> -->
+            </div>
+
+            <!-- DISTRICT NAME -->
+            <div class="form-group">
+              <label>District Name</label>
+
+              <input type="text" formControlName="districtName" placeholder="Enter district name" (keypress)="allowOnlyLetters($event)" />
+
+              <!-- <small *ngIf="hasError('districtName')" class="error">
+                District Name is required
+              </small> -->
+            </div>
+
+          </div>
+
+          <!-- BUTTONS -->
+          <div class="form-actions">
+            <button type="submit" class="save-btn">
+              {{ isEditMode ? 'Update District' : 'Save District' }}
+            </button>
+
+            <button type="button" class="cancel-btn" (click)="resetForm()">
+              Reset
+            </button>
+          </div>
+      </form>
+    </div>
+
+    <!-- TABLE -->
+    <div class="table-card">
+      <div class="table-header">
+        <h2>District List</h2>
+
+        <div class="search-box">
+          <input type="text" [(ngModel)]="searchText" (input)="applySearch()" placeholder="Search districts..." />
+        </div>
+      </div>
+
+      <div class="table-wrapper">
+        <table>
+          <thead>
+            <tr>
+              <th>ID</th>
+              <th>District Name</th>
+              <th>State</th>
+              <th>Actions</th>
+            </tr>
+          </thead>
+
+          <tbody>
+            <tr *ngFor="let d of filteredDistricts">
+              <td>{{ d.districtId }}</td>
+              <td>{{ d.districtName }}</td>
+              <td>{{ getStateName(d.stateId) }}</td>
+              <td class="action-buttons">
+                <button class="edit-btn" (click)="editDistrict(d)">Edit</button>
+                <button class="delete-btn" (click)="deleteDistrict(d.districtId)">Delete</button>
+              </td>
+            </tr>
+
+            <tr *ngIf="filteredDistricts.length === 0">
+              <td colspan="4" class="no-data">No districts found</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+
+  </div>
+</div>

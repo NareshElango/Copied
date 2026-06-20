@@ -1,0 +1,6 @@
+<Solution>
+  <Project Path="All_In_One.API/All_In_One.API.csproj" />
+  <Project Path="All_In_One.Data/All_In_One.Data.csproj" />
+  <Project Path="All_In_One.Domain/All_In_One.Domain.csproj" />
+  <Project Path="All_In_One.Web/All_In_One.Web.csproj" />
+</Solution>

@@ -1,0 +1,108 @@
+<div class="country-page">
+  <div class="country-container">
+
+    <!-- FORM -->
+    <div class="form-card">
+      <div class="form-header">
+        <h2>{{ isEditMode ? 'Edit Division' : 'Create Division' }}</h2>
+      </div>
+
+      <form [formGroup]="divisionForm" (ngSubmit)="onSubmit()" class="country-form">
+
+        <div class="form-grid">
+
+          <!-- DISTRICT DROPDOWN -->
+          <div class="form-group">
+            <label>District</label>
+
+            <div class="custom-select-wrapper">
+
+              <div class="custom-select-box" (click)="toggleDropdown()">
+                {{ selectedDistrictName || 'Select District' }}
+                <span class="arrow">▾</span>
+              </div>
+
+              <div class="custom-dropdown" *ngIf="isDropdownOpen">
+                <div *ngIf="districts.length === 0" class="dropdown-item no-records">
+                  No records found
+                </div>
+                <div class="dropdown-item" *ngFor="let d of districts" (click)="selectDistrict(d, $event)">
+                  {{ d.districtName }}
+                </div>
+              </div>
+
+            </div>
+
+            <!-- <small *ngIf="showDistrictError" class="error">
+              District is required
+            </small> -->
+          </div>
+
+          <!-- DIVISION NAME -->
+          <div class="form-group">
+            <label>Division Name</label>
+
+            <input type="text" formControlName="divisionName" placeholder="Enter division name" (keypress)="allowOnlyLetters($event)"/>
+
+            <!-- <small *ngIf="hasError('divisionName')" class="error">
+              Division Name is required
+            </small> -->
+          </div>
+
+        </div>
+
+        <div class="form-actions">
+          <button type="submit" class="save-btn">
+            {{ isEditMode ? 'Update Division' : 'Save Division' }}
+          </button>
+
+          <button type="button" class="cancel-btn" (click)="resetForm()">
+            Reset
+          </button>
+        </div>
+
+      </form>
+    </div>
+
+    <!-- TABLE -->
+    <div class="table-card">
+      <div class="table-header">
+        <h2>Division List</h2>
+
+        <div class="search-box">
+          <input type="text" [(ngModel)]="searchText" (input)="applySearch()" placeholder="Search divisions..." />
+        </div>
+      </div>
+
+      <div class="table-wrapper">
+        <table>
+          <thead>
+            <tr>
+              <th>ID</th>
+              <th>Division Name</th>
+              <th>District</th>
+              <th>Actions</th>
+            </tr>
+          </thead>
+
+          <tbody>
+            <tr *ngFor="let d of filteredDivisions">
+              <td>{{ d.divisionId }}</td>
+              <td>{{ d.divisionName }}</td>
+              <td>{{ d.districtName }}</td>
+              <td class="action-buttons">
+                <button class="edit-btn" (click)="editDivision(d)">Edit</button>
+                <button class="delete-btn" (click)="deleteDivision(d.divisionId)">Delete</button>
+              </td>
+            </tr>
+
+            <tr *ngIf="filteredDivisions.length === 0">
+              <td colspan="4" class="no-data">No divisions found</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+
+  </div>
+</div>

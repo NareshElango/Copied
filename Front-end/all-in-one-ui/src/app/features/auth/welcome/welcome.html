@@ -1,0 +1,131 @@
+<div class="dashboard-page">
+  <!-- SIDEBAR -->
+  <aside class="sidebar">
+    <div class="sidebar-top">
+      <div class="logo-box">
+        <div class="logo-icon">A</div>
+        <div>
+          <h2>All-In-One</h2>
+          <p>SaaS Admin</p>
+        </div>
+      </div>
+    </div>
+
+    <nav class="sidebar-nav">
+      <button
+        class="nav-item"
+        [class.active]="selectedMenu === 'Dashboard'"
+        (click)="selectMenu('Dashboard')"
+      >
+        🏠 Dashboard
+      </button>
+
+      <div class="menu-group" *ngFor="let group of adminMenus">
+        <h4>{{ group.title }}</h4>
+
+        <button
+          class="nav-item sub-item"
+          *ngFor="let item of group.items"
+          [class.active]="selectedMenu === item"
+          (click)="selectMenu(item)"
+        >
+          {{ item }}
+        </button>
+      </div>
+    </nav>
+  </aside>
+
+  <!-- MAIN CONTENT -->
+  <div class="main-layout">
+    <!-- TOP HEADER -->
+    <header class="top-header">
+      <div class="header-left">
+        <h1>{{ selectedMenu }}</h1>
+        <p>Manage your SaaS platform efficiently</p>
+      </div>
+
+      <div class="header-right">
+        <div class="org-badge">{{ organizationCode }}</div>
+
+        <div class="user-profile">
+          <div class="avatar">{{ userName.charAt(0) }}</div>
+          <div>
+            <h3>{{ userName }}</h3>
+            <p>{{ userRole }}</p>
+          </div>
+        </div>
+
+        <button class="logout-btn" (click)="logout()">Logout</button>
+      </div>
+    </header>
+
+    <!-- DASHBOARD BODY -->
+    <main class="dashboard-content">
+
+      <!-- Show Dashboard UI only when Dashboard is selected -->
+      <ng-container *ngIf="selectedMenu === 'Dashboard'; else pageContent">
+        <!-- Welcome Banner -->
+        <section class="welcome-banner">
+          <div class="banner-text">
+            <span class="mini-badge">ADMIN CONTROL CENTER</span>
+            <h2>Welcome back, {{ userName }} 👋</h2>
+            <p>
+              Monitor organizations, manage users, configure geography data,
+              and control platform activities from one centralized workspace.
+            </p>
+          </div>
+
+          <div class="banner-graphic">
+            <div class="pulse-circle pulse-1"></div>
+            <div class="pulse-circle pulse-2"></div>
+            <div class="pulse-circle pulse-3"></div>
+            <div class="bot-core">⚡</div>
+          </div>
+        </section>
+
+        <!-- Stats Cards -->
+        <section class="stats-grid">
+          <div class="stat-card" *ngFor="let card of dashboardCards">
+            <div class="stat-icon">{{ card.icon }}</div>
+            <div class="stat-info">
+              <h3>{{ card.count }}</h3>
+              <p>{{ card.title }}</p>
+            </div>
+          </div>
+        </section>
+
+        <!-- Quick Access -->
+        <section class="quick-panel">
+          <div class="panel-card">
+            <h3>Quick Actions</h3>
+            <div class="quick-actions">
+              <button (click)="selectMenu('Country')">+ Add Country</button>
+              <button (click)="selectMenu('State')">+ Add State</button>
+              <button (click)="selectMenu('District')">+ Add District</button>
+              <button (click)="selectMenu('Organization')">+ Add Organization</button>
+              <button (click)="selectMenu('Users')">+ Add User</button>
+              <button (click)="selectMenu('Roles')">+ Add Role</button>
+            </div>
+          </div>
+
+          <div class="panel-card activity-card">
+            <h3>Current Selection</h3>
+            <div class="selection-box">
+              <span>{{ selectedMenu }}</span>
+              <p>
+                You can later load the corresponding Angular form or CRUD page
+                here based on the selected sidebar menu.
+              </p>
+            </div>
+          </div>
+        </section>
+      </ng-container>
+
+      <!-- Show Country or future pages here -->
+      <ng-template #pageContent>
+        <router-outlet></router-outlet>
+      </ng-template>
+
+    </main>
+  </div>
+</div>

@@ -1,0 +1,23 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v10.0",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v10.0": {
+      "All_In_One.Domain/1.0.0": {
+        "runtime": {
+          "All_In_One.Domain.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "All_In_One.Domain/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    }
+  }
+}

@@ -1,0 +1,156 @@
+<div class="country-page">
+  <div class="country-container">
+
+    <!-- ================= FORM CARD ================= -->
+    <div class="form-card">
+
+      <div class="form-header">
+        <h2>
+          {{ isEditMode ? 'Edit State' : 'Create State' }}
+        </h2>
+      </div>
+
+      <form [formGroup]="stateForm" (ngSubmit)="onSubmit()" class="country-form">
+
+        <div class="form-grid">
+
+          <!-- COUNTRY DROPDOWN -->
+          <div class="form-group">
+
+            <label>Country</label>
+
+            <div class="custom-select-wrapper">
+
+              <div class="custom-select-box" (click)="toggleDropdown()">
+                <span class="selected-text">
+                  {{ selectedCountryName || 'Select Country' }}
+                </span>
+
+                <span class="arrow" [class.rotate]="isDropdownOpen">
+                  ▾
+                </span>
+              </div>
+
+              <!-- DROPDOWN -->
+              <div class="custom-dropdown" *ngIf="isDropdownOpen">
+                <div *ngIf="countries.length === 0" class="dropdown-item no-records">
+                  No records found
+                </div>
+                <div class="dropdown-item" *ngFor="let c of countries" (click)="selectCountry(c)">
+                  {{ c.countryName }}
+                </div>
+
+              </div>
+
+            </div>
+
+            <!-- <small *ngIf="showCountryError" class="error">
+              Country is required
+            </small> -->
+
+          </div>
+
+          <!-- STATE NAME -->
+          <div class="form-group">
+
+            <label>State Name</label>
+
+            <input type="text" formControlName="stateName" placeholder="Enter state name" (keypress)="allowOnlyLetters($event)"/>
+
+            <!-- <small *ngIf="hasError('stateName')" class="error">
+              State Name is required
+            </small> -->
+
+          </div>
+
+        </div>
+
+        <!-- BUTTONS -->
+        <div class="form-actions">
+
+          <button type="submit" class="save-btn">
+            {{ isEditMode ? 'Update State' : 'Save State' }}
+          </button>
+
+          <button type="button" class="cancel-btn" (click)="resetForm()">
+            Reset
+          </button>
+
+        </div>
+
+      </form>
+
+    </div>
+
+    <!-- ================= TABLE CARD ================= -->
+    <div class="table-card">
+
+      <div class="table-header">
+
+        <h2>State List</h2>
+
+        <div class="search-box">
+
+          <input type="text" [(ngModel)]="searchText" (input)="applySearch()" placeholder="Search states..." />
+
+        </div>
+
+      </div>
+
+      <div class="table-wrapper">
+
+        <table>
+
+          <thead>
+
+            <tr>
+              <th>ID</th>
+              <th>State Name</th>
+              <th>Country</th>
+              <th>Actions</th>
+            </tr>
+
+          </thead>
+
+          <tbody>
+
+            <tr *ngFor="let state of filteredStates">
+
+              <td>{{ state.stateId }}</td>
+
+              <td>{{ state.stateName }}</td>
+
+              <td>{{ state.countryName }}</td>
+
+              <td class="action-buttons">
+
+                <button class="edit-btn" (click)="editState(state)">
+                  Edit
+                </button>
+
+                <button class="delete-btn" (click)="deleteState(state.stateId)">
+                  Delete
+                </button>
+
+              </td>
+
+            </tr>
+
+            <tr *ngIf="filteredStates.length === 0">
+
+              <td colspan="4" class="no-data">
+                No states found
+              </td>
+
+            </tr>
+
+          </tbody>
+
+        </table>
+
+      </div>
+
+    </div>
+
+  </div>
+</div>

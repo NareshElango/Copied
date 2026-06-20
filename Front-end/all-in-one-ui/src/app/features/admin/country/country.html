@@ -1,0 +1,115 @@
+<div class="country-page">
+
+  <div class="country-container">
+
+    <!-- FORM SECTION -->
+    <div class="form-card">
+
+      <div class="form-header">
+        <h2>
+          {{ isEditMode ? 'Edit Country' : 'Create Country' }}
+        </h2>
+      </div>
+
+      <form [formGroup]="countryForm" (ngSubmit)="onSubmit()" class="country-form">
+
+        <div class="form-grid">
+
+          <div class="form-group">
+
+            <label>Country Name</label>
+
+            <input type="text" formControlName="countryName" placeholder="Enter country name" (keypress)="allowOnlyLetters($event)"/>
+
+            <!-- <small *ngIf="hasError('countryName')" class="error">
+              Country Name is required
+            </small> -->
+
+          </div>
+
+        </div>
+
+        <div class="form-actions">
+
+          <button type="submit" class="save-btn">
+            {{ isEditMode ? 'Update Country' : 'Save Country' }}
+          </button>
+
+          <button type="button" class="cancel-btn" (click)="resetForm()">
+            Reset
+          </button>
+
+        </div>
+
+      </form>
+
+    </div>
+
+    <!-- TABLE SECTION -->
+    <div class="table-card">
+
+      <div class="table-header">
+
+        <h2>Country List</h2>
+
+        <div class="search-box">
+
+          <input type="text" [(ngModel)]="searchText" (input)="applySearch()" placeholder="Search countries..." />
+
+        </div>
+
+      </div>
+
+      <div class="table-wrapper">
+
+        <table>
+
+          <thead>
+            <tr>
+              <th>Country ID</th>
+              <th>Country Name</th>
+              <th>Actions</th>
+            </tr>
+          </thead>
+
+          <tbody>
+
+            <tr *ngFor="let country of filteredCountries">
+
+              <td>{{ country.countryId }}</td>
+
+              <td>{{ country.countryName }}</td>
+
+              <td class="action-buttons">
+
+                <button class="edit-btn" (click)="editCountry(country)">
+                  Edit
+                </button>
+
+                <button class="delete-btn" (click)="deleteCountry(country.countryId)">
+                  Delete
+                </button>
+
+              </td>
+
+            </tr>
+
+            <tr *ngIf="filteredCountries.length === 0">
+
+              <td colspan="3" class="no-data">
+                No countries found
+              </td>
+
+            </tr>
+
+          </tbody>
+
+        </table>
+
+      </div>
+
+    </div>
+
+  </div>
+
+</div>

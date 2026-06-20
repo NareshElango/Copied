@@ -1,0 +1,130 @@
+<div class="country-page">
+  <div class="country-container">
+
+    <!-- FORM CARD -->
+    <div class="form-card">
+
+      <div class="form-header">
+        <h2>{{ isEditMode ? 'Edit Role' : 'Create Role' }}</h2>
+      </div>
+
+      <form [formGroup]="roleForm" (ngSubmit)="onSubmit()" class="country-form">
+
+        <div class="form-grid">
+
+          <!-- ROLE NAME -->
+          <div class="form-group">
+            <label>Role Name</label>
+
+            <input type="text" formControlName="roleName" placeholder="Enter role name" (keypress)="allowOnlyLetters($event)"/>
+
+            <!-- <small *ngIf="hasError('roleName')" class="error">
+              Role Name is required
+            </small> -->
+          </div>
+
+          <!-- ACTIONS -->
+          <div class="form-group">
+            <label>Actions</label>
+
+            <div class="multi-select-wrapper">
+              <div class="multi-select-box" (click)="toggleActionDropdown()">
+                <div class="chips">
+                  <span class="chip" *ngFor="let id of selectedActionIds">
+                    {{ actions.find(x => x.actionId === id)?.actionTitle }}
+                    <span (click)="removeAction(id)">✕</span>
+                  </span>
+
+                  <span *ngIf="selectedActionIds.length === 0" class="placeholder">
+                    Select Actions
+                  </span>
+                </div>
+                <span class="arrow">▾</span>
+              </div>
+
+              <div class="multi-dropdown" *ngIf="isActionDropdownOpen">
+                <input type="text" class="search-box" placeholder="Search action..." [(ngModel)]="actionSearch"
+                  [ngModelOptions]="{ standalone: true }" />
+
+                <div class="dropdown-list">
+                  <div *ngFor="let action of filteredActions()" class="dropdown-item"
+                    (click)="toggleAction(action, $event)">
+                    <input type="checkbox" [checked]="isActionSelected(action.actionId)" />
+                    <span>{{ action.actionTitle }}</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+        <!-- SELECTED TAGS (removed: chips are already shown inside the dropdown like Users page) -->
+
+        <!-- BUTTONS -->
+        <div class="form-actions">
+
+          <button type="submit" class="save-btn">
+            {{ isEditMode ? 'Update Role' : 'Save Role' }}
+          </button>
+
+          <button type="button" class="cancel-btn" (click)="resetForm()">
+            Reset
+          </button>
+
+        </div>
+
+      </form>
+    </div>
+
+    <!-- TABLE CARD -->
+    <div class="table-card">
+
+      <div class="table-header">
+        <h2>Role List</h2>
+
+        <div class="search-box">
+          <input type="text" [(ngModel)]="searchText" (input)="applySearch()" placeholder="Search roles..." />
+        </div>
+      </div>
+
+      <div class="table-wrapper">
+
+        <table>
+          <thead>
+            <tr>
+              <th>ID</th>
+              <th>Role Name</th>
+              <th>Actions List</th>
+              <th>Actions</th>
+            </tr>
+          </thead>
+
+          <tbody>
+
+            <tr *ngFor="let r of filteredRoles">
+              <td>{{ r.roleId }}</td>
+              <td>{{ r.roleName }}</td>
+              <td>
+                <span *ngFor="let id of r.actionIds" class="action-tag">
+                  {{ actions.find(x => x.actionId === id)?.actionTitle }}
+                </span>
+              </td>
+              <td class="action-buttons">
+                <button class="edit-btn" (click)="editRole(r)">Edit</button>
+                <button class="delete-btn" (click)="deleteRole(r.roleId)">Delete</button>
+              </td>
+            </tr>
+
+            <tr *ngIf="filteredRoles.length === 0">
+              <td colspan="3" class="no-data">No roles found</td>
+            </tr>
+
+          </tbody>
+        </table>
+
+      </div>
+    </div>
+
+  </div>
+</div>
